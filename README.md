@@ -1,5 +1,4 @@
 # YIGA GROUPS
-
 A responsive, single-page marketing website for **YIGA GROUPS**, a diversified African business group founded by Besong Yiga James in 2017.
 
 The page presents the group's eight business wings, its philosophy, founder, culture, and a contact area.
