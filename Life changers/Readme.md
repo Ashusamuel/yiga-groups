@@ -1,0 +1,2 @@
+# What they do
+A digital community and empowerment movement built to help people develop real skills, useful knowledge, and access to opportunity — the entry point into everything the group stands for. Life Changers exists to make sure that as YIGA GROUPS grows, the people around it grow with it.

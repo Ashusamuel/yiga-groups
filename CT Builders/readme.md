@@ -1,0 +1,2 @@
+## What they do
+Acquiring land, developing property and building homes and estates across Africa. CT Builders takes the long view — real assets, built to standard, held for generations rather than flipped for a quarter.

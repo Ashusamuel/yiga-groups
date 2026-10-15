@@ -1,0 +1,168 @@
+/* =====================================================
+   LIFE CHANGERS — WING 01
+   Community · Education · Empowerment
+   Part of Yiga Groups Design System
+   ===================================================== */
+
+:root {
+  --accent: #16A34A;
+  --accent-on-dark: #4ADE80;
+}
+
+/* ─── HERO VISUAL ─── */
+.wing-visual {
+  width: 420px;
+  height: 420px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.lc-ring {
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.lc-ring--1 {
+  width: 380px;
+  height: 380px;
+  background: rgba(22, 163, 74, 0.08);
+}
+
+.lc-ring--2 {
+  width: 280px;
+  height: 280px;
+  background: rgba(22, 163, 74, 0.14);
+}
+
+.lc-ring--3 {
+  width: 180px;
+  height: 180px;
+  background: rgba(22, 163, 74, 0.22);
+}
+
+.lc-core {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 8px rgba(74, 222, 128, 0.25);
+}
+
+.lc-dot {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #4ADE80;
+  border-radius: 50%;
+  animation: lc-float 4s ease-in-out infinite;
+}
+
+.lc-dot:nth-child(5) { top: 8%;  left: 65%; animation-delay: 0s; }
+.lc-dot:nth-child(6) { top: 30%; left: 90%; animation-delay: 0.8s; }
+.lc-dot:nth-child(7) { top: 68%; left: 85%; animation-delay: 1.6s; }
+.lc-dot:nth-child(8) { top: 82%; left: 45%; animation-delay: 2.4s; }
+.lc-dot:nth-child(9) { top: 50%; left: 4%;  animation-delay: 3.2s; }
+
+@keyframes lc-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lc-dot {
+    animation: none;
+  }
+}
+
+/* ─── SERVICE CARDS ACCENT BAR ─── */
+.yg-card--accent-top::before {
+  transform: scaleX(1);
+}
+
+/* ─── STORY CARDS (UNIQUE SECTION) ─── */
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+}
+
+.story-card {
+  background: var(--surface-raised);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-1);
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  transition:
+    box-shadow var(--dur-normal) var(--ease-glide),
+    transform  var(--dur-normal) var(--ease-glide);
+}
+
+.story-card:hover {
+  box-shadow: var(--shadow-2);
+  transform: translateY(-4px);
+}
+
+.story-avatar {
+  width: 52px;
+  height: 52px;
+  background: var(--accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: var(--space-4);
+  flex-shrink: 0;
+}
+
+.story-name {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--on-surface);
+}
+
+.story-location {
+  font-size: var(--text-xs);
+  color: var(--on-surface-muted);
+  margin-bottom: var(--space-4);
+}
+
+.story-quote {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--text-lg);
+  color: var(--on-surface);
+  line-height: 1.5;
+  margin-top: auto;
+}
+
+@media (max-width: 1023px) {
+  .story-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+}

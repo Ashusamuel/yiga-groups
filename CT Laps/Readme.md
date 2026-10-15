@@ -1,0 +1,2 @@
+# What they do 
+The group's software and product studio — building applications, digital platforms and technology solutions, for the other wings first and for outside clients where it makes sense. CT Labs is where every other wing's operations quietly get faster.

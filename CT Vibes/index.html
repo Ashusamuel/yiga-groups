@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CT Vibes — African music, media and culture | A Yiga Groups company</title>
+  <meta name="description" content="CT Vibes puts African music, entertainment, television and culture on the biggest stage — on its own terms, with pride.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="CT Vibes — African music, media and culture | A Yiga Groups company">
+  <meta property="og:description" content="CT Vibes puts African music, entertainment, television and culture on the biggest stage — on its own terms, with pride.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:ital,wght@0,400..600;1,400..600&display=swap" rel="stylesheet">
+
+  <!-- Styles: shared first, then wing-specific -->
+  <link rel="stylesheet" href="../shared/tokens.css">
+  <link rel="stylesheet" href="../shared/components.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-wing="vibes">
+  <!-- Skip link -->
+  <a class="yg-skip-link" href="#main">Skip to main content</a>
+
+  <!-- NAV -->
+  <header>
+    <nav class="yg-nav" aria-label="Main navigation">
+      <div class="yg-nav__inner">
+        <!-- Parent pill (desktop only — hidden by CSS on mobile) -->
+        <a class="yg-nav__parent-pill" href="../Yiga Groups/Yiga-Group.html" aria-label="Part of Yiga Groups — visit parent site">
+          <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v9a1 1 0 001 1h4v-5h4v5h4a1 1 0 001-1v-9"/></svg>
+          Part of Yiga Groups
+        </a>
+
+        <!-- Wing name -->
+        <a class="yg-nav__brand" href="#" aria-current="page">
+          <span class="yg-nav__brand-name">CT <em>Vibes</em></span>
+        </a>
+
+        <!-- Desktop nav links -->
+        <ul class="yg-nav__links" role="list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#featured">Featured</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Desktop CTA -->
+        <div class="yg-nav__cta">
+          <a class="yg-btn yg-btn--primary" href="#contact">Contact Us</a>
+        </div>
+
+        <!-- Mobile hamburger -->
+        <button class="yg-nav__menu-btn" data-yg-menu-toggle aria-expanded="false" aria-controls="mobile-drawer" aria-label="Open menu">
+          <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MOBILE OVERLAY + DRAWER -->
+  <div class="yg-overlay" data-yg-overlay aria-hidden="true"></div>
+  <div class="yg-drawer" id="mobile-drawer" data-yg-drawer role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <button class="yg-drawer__close" data-yg-drawer-close aria-label="Close menu">
+      <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+    <ul class="yg-drawer__links" role="list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#featured">Featured</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="../Yiga Groups/Yiga-Group.html">Yiga Groups ↗</a></li>
+    </ul>
+    <div class="yg-drawer__cta">
+      <a class="yg-btn yg-btn--primary" href="#contact">Contact Us</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- HERO (Navy) -->
+    <section class="yg-hero" id="hero" aria-label="Introduction">
+      <div class="yg-hero__inner">
+        <div class="yg-hero__content" data-reveal>
+          <p class="yg-hero__kicker">Music · Entertainment · Culture</p>
+          <h1>African culture, on the <em>biggest</em> stage.</h1>
+          <p class="yg-hero__lead">We promote African music, artists and culture on their own terms. No compromise, no imitation — authentic, unapologetic and global.</p>
+          <div class="yg-btn-row">
+            <a class="yg-btn yg-btn--primary" href="#featured">Discover artists</a>
+            <a class="yg-btn yg-btn--ghost-white" href="../Yiga Groups/Yiga-Group.html">Meet the group</a>
+          </div>
+        </div>
+
+        <div class="yg-hero__visual" data-reveal data-delay="1">
+          <div class="wing-visual" aria-hidden="true">
+            <div class="eq-bars">
+              <div class="eq-baseline"></div>
+              <div class="eq-bar"></div>
+              <div class="eq-bar"></div>
+              <div class="eq-bar"></div>
+              <div class="eq-bar"></div>
+              <div class="eq-bar"></div>
+              <div class="eq-bar"></div>
+              <div class="eq-bar"></div>
+              <div class="eq-bar"></div>
+              <div class="eq-bar"></div>
+              <div class="eq-bar"></div>
+              <div class="eq-bar"></div>
+              <div class="eq-bar"></div>
+              <div class="eq-bar"></div>
+              <div class="eq-bar"></div>
+              <div class="eq-bar"></div>
+              <div class="eq-bar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION (Mist) -->
+    <section class="yg-section yg-section--mist" id="about" aria-labelledby="about-heading">
+      <div class="yg-wrap">
+        <header class="yg-section-header" data-reveal>
+          <p class="yg-kicker">Who we are</p>
+          <h2 class="yg-h2" id="about-heading">Culture is the <em>accent</em> on everything.</h2>
+          <p class="yg-lead">CT Vibes exists because a business group this wide must never forget where it comes from. We make sure Yiga Groups sounds, looks and feels like Africa.</p>
+        </header>
+
+        <div class="yg-card-grid">
+          <!-- Card 1 -->
+          <article class="yg-card" data-reveal data-delay="1">
+            <div class="yg-card__icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+            </div>
+            <p class="yg-card__num">01</p>
+            <h3 class="yg-card__title">African-owned</h3>
+            <p class="yg-card__body">We promote African artists, labels and producers. Every collaboration starts from a place of equal footing — not a charity grant or an outsider's curation.</p>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="yg-card" data-reveal data-delay="2">
+            <div class="yg-card__icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+            </div>
+            <p class="yg-card__num">02</p>
+            <h3 class="yg-card__title">Platform first</h3>
+            <p class="yg-card__body">CT Vibes is a platform, not a gatekeeper. We amplify what is already great — we do not decide what African culture should be.</p>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="yg-card" data-reveal data-delay="3">
+            <div class="yg-card__icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <p class="yg-card__num">03</p>
+            <h3 class="yg-card__title">Global reach</h3>
+            <p class="yg-card__body">The goal is for an artist from Bamenda or Nairobi to reach a listener in Paris or Jo'burg without losing anything that makes the music theirs.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION (White) -->
+    <section class="yg-section yg-section--white" id="services" aria-labelledby="services-heading">
+      <div class="yg-wrap">
+        <header class="yg-section-header" data-reveal>
+          <p class="yg-kicker">What we do</p>
+          <h2 class="yg-h2" id="services-heading">How we <em>amplify</em>.</h2>
+          <p class="yg-lead">CT Vibes works across music, television, events and media to give African culture the infrastructure it deserves.</p>
+        </header>
+
+        <div class="yg-card-grid yg-card-grid--4">
+          <!-- Service 1 -->
+          <article class="yg-card yg-card--accent-top" data-reveal data-delay="1">
+            <div class="yg-card__icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+            </div>
+            <p class="yg-card__num">01</p>
+            <h3 class="yg-card__title">Artist Promotion</h3>
+            <p class="yg-card__body">Distribution, placement, press and digital marketing for artists who are ready to grow. We work with the music, not against it.</p>
+          </article>
+
+          <!-- Service 2 -->
+          <article class="yg-card yg-card--accent-top" data-reveal data-delay="2">
+            <div class="yg-card__icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <p class="yg-card__num">02</p>
+            <h3 class="yg-card__title">Events &amp; Shows</h3>
+            <p class="yg-card__body">Live events, concerts and cultural shows across our cities. We produce, we promote, we host — from intimate venues to major stages.</p>
+          </article>
+
+          <!-- Service 3 -->
+          <article class="yg-card yg-card--accent-top" data-reveal data-delay="3">
+            <div class="yg-card__icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+            </div>
+            <p class="yg-card__num">03</p>
+            <h3 class="yg-card__title">Media Production</h3>
+            <p class="yg-card__body">TV content, online video, podcasts and cultural programming — produced and owned by Africans, for African audiences and the diaspora.</p>
+          </article>
+
+          <!-- Service 4 -->
+          <article class="yg-card yg-card--accent-top" data-reveal data-delay="4">
+            <div class="yg-card__icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="yg-card__num">04</p>
+            <h3 class="yg-card__title">Brand &amp; Culture</h3>
+            <p class="yg-card__body">Culture-led brand partnerships and creative campaigns that feel authentic because they start with the artists and communities, not a brief.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS SECTION (Royal Blue) -->
+    <section class="yg-stats" aria-label="Key statistics">
+      <div class="yg-stats__grid">
+        <div class="yg-stat" data-reveal>
+          <span class="yg-stat__num" aria-label="Over 200 artists on our platform">
+            <span data-count="200">200</span><span class="yg-stat__suffix" aria-hidden="true">+</span>
+          </span>
+          <span class="yg-stat__label">Artists</span>
+          <span class="yg-stat__context">On our platform</span>
+        </div>
+
+        <div class="yg-stat" data-reveal data-delay="1">
+          <span class="yg-stat__num" aria-label="Over 50 events produced and promoted">
+            <span data-count="50">50</span><span class="yg-stat__suffix" aria-hidden="true">+</span>
+          </span>
+          <span class="yg-stat__label">Events</span>
+          <span class="yg-stat__context">Produced and promoted</span>
+        </div>
+
+        <div class="yg-stat" data-reveal data-delay="2">
+          <span class="yg-stat__num" aria-label="8 cities with active reach">
+            <span data-count="8">8</span>
+          </span>
+          <span class="yg-stat__label">Cities</span>
+          <span class="yg-stat__context">Active reach</span>
+        </div>
+
+        <div class="yg-stat" data-reveal data-delay="3">
+          <span class="yg-stat__num" aria-label="Launched in 2018">
+            <span data-count="2018">2018</span>
+          </span>
+          <span class="yg-stat__label">Launched</span>
+          <span class="yg-stat__context">Part of Yiga Groups</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- UNIQUE SECTION — FEATURED CONTENT (Navy) -->
+    <section class="yg-section yg-section--navy" id="featured" aria-labelledby="featured-heading">
+      <div class="yg-wrap">
+        <header class="yg-section-header" data-reveal>
+          <p class="yg-kicker">Featured</p>
+          <h2 class="yg-h2" id="featured-heading">What we are <em>celebrating</em> now.</h2>
+          <p class="yg-lead">A selection of artists, shows and events currently on the CT Vibes platform.</p>
+        </header>
+
+        <div class="featured-grid">
+          <!-- Featured Card 1 -->
+          <article class="featured-card" data-reveal data-delay="1">
+            <div class="featured-card__block" aria-hidden="true">
+              <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+            </div>
+            <p class="featured-card__type">Podcast · Weekly</p>
+            <h3 class="featured-card__name">The Afrobeats Report</h3>
+            <p class="featured-card__desc">A weekly breakdown of what is moving in African music — new releases, artist spotlights, and the stories behind the songs.</p>
+            <a class="featured-card__link" href="#contact">Listen / Watch <span aria-hidden="true">→</span></a>
+          </article>
+
+          <!-- Featured Card 2 -->
+          <article class="featured-card" data-reveal data-delay="2">
+            <div class="featured-card__block" aria-hidden="true">
+              <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+            </div>
+            <p class="featured-card__type">Documentary Series</p>
+            <h3 class="featured-card__name">Roots &amp; Routes</h3>
+            <p class="featured-card__desc">A six-part documentary following musicians from Cameroon, Nigeria and Kenya as they record, tour and build their careers.</p>
+            <a class="featured-card__link" href="#contact">Watch series <span aria-hidden="true">→</span></a>
+          </article>
+
+          <!-- Featured Card 3 -->
+          <article class="featured-card" data-reveal data-delay="3">
+            <div class="featured-card__block" aria-hidden="true">
+              <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+            </div>
+            <p class="featured-card__type">Events · Ongoing</p>
+            <h3 class="featured-card__name">CT Vibes Live</h3>
+            <p class="featured-card__desc">Monthly live shows in Yaoundé and Douala, featuring headline acts and emerging artists on the same bill.</p>
+            <a class="featured-card__link" href="#contact">View lineup <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+
+        <!-- Full-width CTA Band -->
+        <div class="featured-cta-band" data-reveal>
+          <p class="featured-cta-band__label">Are you an artist or a creator?</p>
+          <h3 class="featured-cta-band__headline">CT Vibes is looking for the next voice to platform.</h3>
+          <a class="featured-cta-band__link" href="#contact">Get in touch →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION (Mist) -->
+    <section class="yg-section yg-section--mist" id="contact" aria-labelledby="contact-heading">
+      <div class="yg-wrap">
+        <div class="yg-contact-layout">
+          <div class="yg-contact-info" data-reveal>
+            <p class="yg-kicker">Get on the platform</p>
+            <h2 class="yg-contact-info__title" id="contact-heading">Get on the platform.</h2>
+            <p class="yg-contact-info__body">Whether you are an artist, a creator, an event organiser or a brand — get in touch. We listen to everything we receive.</p>
+            <div class="yg-contact-info__item">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/>
+              </svg>
+              <a href="mailto:hello@ctvibes.yigagroups.com">hello@ctvibes.yigagroups.com</a>
+            </div>
+          </div>
+
+          <form class="yg-form" data-yg-form data-reveal data-delay="1">
+            <div class="yg-field">
+              <label class="yg-label" for="full-name">Full Name <span aria-hidden="true">*</span></label>
+              <input class="yg-input" type="text" id="full-name" name="name" required placeholder="Your full name" autocomplete="name">
+            </div>
+
+            <div class="yg-field">
+              <label class="yg-label" for="email">Email <span aria-hidden="true">*</span></label>
+              <input class="yg-input" type="email" id="email" name="email" required placeholder="you@example.com" autocomplete="email">
+            </div>
+
+            <div class="yg-field">
+              <label class="yg-label" for="role">I am a <span aria-hidden="true">*</span></label>
+              <select class="yg-select" id="role" name="role" required>
+                <option value="" disabled selected>Select who you are</option>
+                <option value="artist">Artist</option>
+                <option value="creator">Creator</option>
+                <option value="organiser">Event organiser</option>
+                <option value="brand">Brand</option>
+                <option value="fan">Fan</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="yg-field">
+              <label class="yg-label" for="message">Message <span aria-hidden="true">*</span></label>
+              <textarea class="yg-textarea" id="message" name="message" required placeholder="Tell us about your sound, your project, or your vision..."></textarea>
+            </div>
+
+            <button type="submit" class="yg-btn yg-btn--primary">Send it</button>
+
+            <p class="yg-form__privacy">Your details are used only to respond to your message. Read our <a href="#">privacy policy</a>.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="yg-footer" aria-label="Site footer">
+    <div class="yg-footer__inner">
+      <div class="yg-footer__grid">
+        <!-- Brand col -->
+        <div>
+          <p class="yg-footer__brand-name">Yiga <em>Groups</em></p>
+          <p class="yg-footer__brand-descriptor">From Innovation to Impact</p>
+          <p class="yg-footer__brand-desc">CT Vibes is the music, media and culture wing of Yiga Groups, putting African culture on the biggest stage since 2018.</p>
+          <a class="yg-footer__parent-link" href="../Yiga Groups/Yiga-Group.html">
+            <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14" height="14"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            A Yiga Groups company
+          </a>
+        </div>
+
+        <!-- Links col 1 -->
+        <div>
+          <p class="yg-footer__col-title">CT Vibes</p>
+          <ul class="yg-footer__links">
+            <li><a href="#about">About us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Links col 2 -->
+        <div>
+          <p class="yg-footer__col-title">Yiga Groups</p>
+          <ul class="yg-footer__links">
+            <li><a href="../Yiga Groups/Yiga-Group.html">The group</a></li>
+            <li><a href="../Yiga Groups/Yiga-Group.html#wings">All wings</a></li>
+            <li><a href="../Yiga Groups/Yiga-Group.html#contact">Get in touch</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="yg-footer__bottom">
+        <p class="yg-footer__copyright">
+          © 2018–<span data-year></span> CT Vibes. A Yiga Groups company.<br>
+          Yiga Groups is part of Yiga Holdings.
+        </p>
+        <ul class="yg-footer__legal">
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts: shared first, then wing-specific -->
+  <script src="../shared/base.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>

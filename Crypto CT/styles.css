@@ -1,0 +1,165 @@
+/* =====================================================
+   CRYPTO CT — WING 07 STYLESHEET
+   A Yiga Groups Company
+   ===================================================== */
+
+:root {
+  --accent: #4338CA;
+  --accent-on-dark: #818CF8;
+}
+
+/* ─── SITE-WIDE COMPLIANCE BANNER ─── */
+.yg-compliance--banner {
+  margin: 0;
+  border-radius: 0;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  background: var(--navy);
+  border-bottom: 1px solid color-mix(in srgb, var(--accent-on-dark) 25%, transparent);
+  padding-top: calc(var(--nav-height) + var(--space-3));
+  padding-bottom: var(--space-3);
+  position: relative;
+  z-index: 80;
+}
+
+.yg-compliance--banner p {
+  color: var(--slate-300);
+  font-size: var(--text-xs);
+  text-align: center;
+  margin: 0;
+}
+
+.yg-compliance--banner strong {
+  color: var(--accent-on-dark);
+}
+
+/* Adjust hero top padding to balance spacing with site-wide banner */
+.yg-hero {
+  padding-top: var(--space-16);
+  min-height: calc(min(100svh, 880px) - var(--nav-height));
+}
+
+/* ─── HERO VISUAL (Hexagonal Blockchain Network) ─── */
+.wing-visual {
+  width: 420px;
+  height: 360px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.hex-svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  display: block;
+}
+
+.hex-poly {
+  transition: opacity var(--dur-normal) var(--ease-glide), fill var(--dur-normal) var(--ease-glide);
+}
+
+.hex-poly--active {
+  animation: hexPulse 4s ease-in-out infinite alternate;
+}
+
+@keyframes hexPulse {
+  0% {
+    fill: color-mix(in srgb, var(--accent-on-dark) 12%, transparent);
+    opacity: 0.7;
+  }
+  100% {
+    fill: color-mix(in srgb, var(--accent-on-dark) 24%, transparent);
+    opacity: 0.95;
+  }
+}
+
+/* ─── UNIQUE SECTION: GLOSSARY ─── */
+.glossary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+}
+
+.glossary-card {
+  background: var(--surface-raised);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-1);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
+  transition:
+    box-shadow var(--dur-normal) var(--ease-glide),
+    transform  var(--dur-normal) var(--ease-glide);
+}
+
+.glossary-card:hover {
+  box-shadow: var(--shadow-2);
+  transform: translateY(-4px);
+}
+
+.glossary-term {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--text-3xl);
+  font-weight: 400;
+  color: var(--accent);
+  margin-bottom: var(--space-4);
+  line-height: 1.1;
+}
+
+.glossary-def {
+  font-size: var(--text-base);
+  color: var(--on-surface);
+  line-height: 1.65;
+}
+
+.glossary-note {
+  text-align: center;
+  margin-top: var(--space-8);
+  font-size: var(--text-sm);
+  color: var(--on-surface-muted);
+  font-style: italic;
+}
+
+/* ─── FORM SELECT WRAPPER ─── */
+.yg-select-wrap {
+  position: relative;
+}
+
+.yg-select-wrap::after {
+  content: '';
+  position: absolute;
+  right: var(--space-4);
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 6px;
+  background-color: var(--slate-500);
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  pointer-events: none;
+}
+
+/* ─── RESPONSIVE BREAKPOINTS ─── */
+@media (max-width: 1023px) {
+  .glossary-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .glossary-grid {
+    grid-template-columns: 1fr;
+  }
+  .yg-compliance--banner p {
+    font-size: var(--text-xs);
+    text-align: left;
+  }
+}
+
+/* ─── REDUCED MOTION OVERRIDES ─── */
+@media (prefers-reduced-motion: reduce) {
+  .hex-poly--active {
+    animation: none !important;
+  }
+}

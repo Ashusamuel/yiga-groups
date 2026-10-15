@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CT Farmers — Sustainable food production across Africa | A Yiga Groups company</title>
+  <meta name="description" content="CT Farmers grows food Africa can count on. Sustainable, innovation-led farming from land to yield — fresher produce, less waste.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="CT Farmers — Sustainable food production across Africa | A Yiga Groups company">
+  <meta property="og:description" content="CT Farmers grows food Africa can count on. Sustainable, innovation-led farming from land to yield — fresher produce, less waste.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:ital,wght@0,400..600;1,400..600&display=swap" rel="stylesheet">
+
+  <!-- Styles: shared first, then wing-specific -->
+  <link rel="stylesheet" href="../shared/tokens.css">
+  <link rel="stylesheet" href="../shared/components.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-wing="farmers">
+  <!-- Skip link -->
+  <a class="yg-skip-link" href="#main">Skip to main content</a>
+
+  <!-- NAVIGATION -->
+  <header>
+    <nav class="yg-nav" aria-label="Main navigation">
+      <div class="yg-nav__inner">
+        <!-- Parent pill (desktop only — hidden by CSS on mobile) -->
+        <a class="yg-nav__parent-pill" href="../Yiga Groups/Yiga-Group.html" aria-label="Part of Yiga Groups — visit parent site">
+          <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v9a1 1 0 001 1h4v-5h4v5h4a1 1 0 001-1v-9"/></svg>
+          Part of Yiga Groups
+        </a>
+
+        <!-- Wing name -->
+        <a class="yg-nav__brand" href="#" aria-current="page">
+          <span class="yg-nav__brand-name">CT <em>Farmers</em></span>
+        </a>
+
+        <!-- Desktop nav links -->
+        <ul class="yg-nav__links" role="list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#produce">In season</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Desktop CTA -->
+        <div class="yg-nav__cta">
+          <a class="yg-btn yg-btn--primary" href="#contact">Partner with us</a>
+        </div>
+
+        <!-- Mobile hamburger -->
+        <button class="yg-nav__menu-btn" data-yg-menu-toggle aria-expanded="false" aria-controls="mobile-drawer" aria-label="Open menu">
+          <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MOBILE OVERLAY + DRAWER -->
+  <div class="yg-overlay" data-yg-overlay aria-hidden="true"></div>
+  <div class="yg-drawer" id="mobile-drawer" data-yg-drawer role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <button class="yg-drawer__close" data-yg-drawer-close aria-label="Close menu">
+      <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+    <ul class="yg-drawer__links" role="list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#produce">In season</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="../Yiga Groups/Yiga-Group.html">Yiga Groups ↗</a></li>
+    </ul>
+    <div class="yg-drawer__cta">
+      <a class="yg-btn yg-btn--primary" href="#contact">Partner with us</a>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main id="main">
+    <!-- HERO (Navy) -->
+    <section class="yg-hero" id="hero" aria-label="Introduction">
+      <div class="yg-hero__inner">
+        <div class="yg-hero__content" data-reveal>
+          <p class="yg-hero__kicker">Agriculture · Food Production · Sustainability</p>
+          <h1>Food that <em>reaches</em> you.</h1>
+          <p class="yg-hero__lead">We farm sustainably, work with local communities, and get produce to markets faster — fresher, for less waste. From land to shelf, CT Farmers treats food production as infrastructure.</p>
+          <div class="yg-btn-row">
+            <a class="yg-btn yg-btn--primary" href="#contact">Partner with us</a>
+            <a class="yg-btn yg-btn--ghost-white" href="../Yiga Groups/Yiga-Group.html">Meet the group</a>
+          </div>
+        </div>
+
+        <div class="yg-hero__visual" data-reveal data-delay="1">
+          <div class="wing-visual" aria-hidden="true">
+            <div class="farm-sky"></div>
+            <div class="farm-sun"></div>
+            <div class="farm-hill farm-hill--back"></div>
+            <div class="farm-hill farm-hill--mid"></div>
+            <div class="farm-hill farm-hill--front">
+              <div class="farm-row"></div>
+              <div class="farm-row"></div>
+              <div class="farm-row"></div>
+              <div class="farm-row"></div>
+              <div class="farm-row"></div>
+              <div class="farm-row"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION (Mist) -->
+    <section class="yg-section yg-section--mist" id="about" aria-labelledby="about-heading">
+      <div class="yg-wrap">
+        <header class="yg-section-header" data-reveal>
+          <p class="yg-kicker">How we farm</p>
+          <h2 class="yg-h2" id="about-heading">Good food starts with <em>good practice</em>.</h2>
+          <p class="yg-lead">CT Farmers uses sustainable methods to grow food that reaches the market in good condition. We work with local farming communities, not around them.</p>
+        </header>
+
+        <div class="yg-card-grid">
+          <article class="yg-card" data-reveal data-delay="1">
+            <div class="yg-card__icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+              </svg>
+            </div>
+            <p class="yg-card__num">01</p>
+            <h3 class="yg-card__title">Sustainable</h3>
+            <p class="yg-card__body">We use farming methods that build the soil, use water responsibly and avoid inputs that damage the land for future seasons.</p>
+          </article>
+
+          <article class="yg-card" data-reveal data-delay="2">
+            <div class="yg-card__icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <rect x="1" y="3" width="15" height="13" rx="1"/>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+                <circle cx="5.5" cy="18.5" r="2.5"/>
+                <circle cx="18.5" cy="18.5" r="2.5"/>
+              </svg>
+            </div>
+            <p class="yg-card__num">02</p>
+            <h3 class="yg-card__title">Fresh to market</h3>
+            <p class="yg-card__body">Shorter routes from farm to shelf mean fresher produce and less spoilage. We handle cold-chain and logistics ourselves where possible.</p>
+          </article>
+
+          <article class="yg-card" data-reveal data-delay="3">
+            <div class="yg-card__icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <p class="yg-card__num">03</p>
+            <h3 class="yg-card__title">Community first</h3>
+            <p class="yg-card__body">Our farms work with and employ local communities. Yields improve when the people doing the farming benefit from the results.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION (White) -->
+    <section class="yg-section yg-section--white" id="services" aria-labelledby="services-heading">
+      <div class="yg-wrap">
+        <header class="yg-section-header" data-reveal>
+          <p class="yg-kicker">What we grow</p>
+          <h2 class="yg-h2" id="services-heading">Produce you can <em>count on</em>.</h2>
+          <p class="yg-lead">CT Farmers grows and distributes a range of staple and commercial crops, supplying retail, wholesale and agribusiness partners.</p>
+        </header>
+
+        <div class="yg-card-grid">
+          <article class="yg-card" data-reveal data-delay="1">
+            <div class="yg-card__icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M12 2v20M7 8l5-5 5 5M7 14l5-5 5 5M7 20l5-5 5 5"/>
+              </svg>
+            </div>
+            <p class="yg-card__num">01</p>
+            <h3 class="yg-card__title">Staple Crops</h3>
+            <p class="yg-card__body">Maize, cassava, plantain and root vegetables — the foundation of the regional diet and the most important crops to get consistently right, season after season.</p>
+          </article>
+
+          <article class="yg-card" data-reveal data-delay="2">
+            <div class="yg-card__icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M12 20.94c1.5 0 2.75 1.06 4 1.06 3 0 6-8 6-12.22A4.91 4.91 0 0 0 17 5c-2.22 0-4 1.44-5 2-1-.56-2.78-2-5-2a4.9 4.9 0 0 0-5 4.78C2 14 5 22 8 22c1.25 0 2.5-1.06 4-1.06Z"/>
+                <path d="M10 2c1 .5 2 2 2 5"/>
+              </svg>
+            </div>
+            <p class="yg-card__num">02</p>
+            <h3 class="yg-card__title">Vegetables &amp; Produce</h3>
+            <p class="yg-card__body">Tomatoes, peppers, onions, leafy greens. Grown with attention to the conditions that actually matter: soil quality, water, and getting to market on time.</p>
+          </article>
+
+          <article class="yg-card" data-reveal data-delay="3">
+            <div class="yg-card__icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                <path d="m14 11 2 2 4-4"/>
+              </svg>
+            </div>
+            <p class="yg-card__num">03</p>
+            <h3 class="yg-card__title">Supply Partnerships</h3>
+            <p class="yg-card__body">We supply supermarkets, food processors, NGOs and catering businesses with consistent volume at agreed quality levels. SLA-backed, with traceability.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS (Royal Blue) -->
+    <section class="yg-stats" aria-label="Key agricultural metrics">
+      <div class="yg-stats__grid">
+        <div class="yg-stat" data-reveal>
+          <span class="yg-stat__num" aria-label="500 hectares of farmland">
+            <span data-count="500">500</span><span class="yg-stat__suffix" aria-hidden="true">ha</span>
+          </span>
+          <span class="yg-stat__label">Farmland</span>
+          <span class="yg-stat__context">Under active cultivation</span>
+        </div>
+
+        <div class="yg-stat" data-reveal data-delay="1">
+          <span class="yg-stat__num" aria-label="8 produce categories">
+            <span data-count="8">8</span>
+          </span>
+          <span class="yg-stat__label">Produce categories</span>
+          <span class="yg-stat__context">Grown and distributed</span>
+        </div>
+
+        <div class="yg-stat" data-reveal data-delay="2">
+          <span class="yg-stat__num" aria-label="Over 50 supply partners">
+            <span data-count="50">50</span><span class="yg-stat__suffix" aria-hidden="true">+</span>
+          </span>
+          <span class="yg-stat__label">Supply partners</span>
+          <span class="yg-stat__context">Retailers and processors</span>
+        </div>
+
+        <div class="yg-stat" data-reveal data-delay="3">
+          <span class="yg-stat__num" aria-label="3 countries with active operations">
+            <span data-count="3">3</span>
+          </span>
+          <span class="yg-stat__label">Countries</span>
+          <span class="yg-stat__context">Active operations</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- UNIQUE SECTION — PRODUCE GRID (White) -->
+    <section class="yg-section yg-section--white" id="produce" aria-labelledby="produce-heading">
+      <div class="yg-wrap">
+        <header class="yg-section-header" data-reveal>
+          <p class="yg-kicker">In season</p>
+          <h2 class="yg-h2" id="produce-heading">What we are <em>growing</em> now.</h2>
+          <p class="yg-lead">Availability varies by season. This is updated quarterly based on active harvests.</p>
+        </header>
+
+        <div class="produce-grid">
+          <article class="produce-card" data-reveal data-delay="1">
+            <span class="produce-emoji" role="img" aria-label="Maize">🌽</span>
+            <h3 class="produce-name">Maize</h3>
+            <span class="produce-badge produce-badge--yearround">Year-round</span>
+          </article>
+
+          <article class="produce-card" data-reveal data-delay="2">
+            <span class="produce-emoji" role="img" aria-label="Tomatoes">🍅</span>
+            <h3 class="produce-name">Tomatoes</h3>
+            <span class="produce-badge produce-badge--inseason">In season</span>
+          </article>
+
+          <article class="produce-card" data-reveal data-delay="3">
+            <span class="produce-emoji" role="img" aria-label="Peppers">🌶️</span>
+            <h3 class="produce-name">Peppers</h3>
+            <span class="produce-badge produce-badge--inseason">In season</span>
+          </article>
+
+          <article class="produce-card" data-reveal data-delay="4">
+            <span class="produce-emoji" role="img" aria-label="Cassava">🌿</span>
+            <h3 class="produce-name">Cassava</h3>
+            <span class="produce-badge produce-badge--yearround">Year-round</span>
+          </article>
+
+          <article class="produce-card" data-reveal data-delay="1">
+            <span class="produce-emoji" role="img" aria-label="Plantain">🍌</span>
+            <h3 class="produce-name">Plantain</h3>
+            <span class="produce-badge produce-badge--yearround">Year-round</span>
+          </article>
+
+          <article class="produce-card" data-reveal data-delay="2">
+            <span class="produce-emoji" role="img" aria-label="Onions">🧅</span>
+            <h3 class="produce-name">Onions</h3>
+            <span class="produce-badge produce-badge--seasonal">Seasonal</span>
+          </article>
+
+          <article class="produce-card" data-reveal data-delay="3">
+            <span class="produce-emoji" role="img" aria-label="Leafy Greens">🥗</span>
+            <h3 class="produce-name">Leafy Greens</h3>
+            <span class="produce-badge produce-badge--inseason">In season</span>
+          </article>
+
+          <article class="produce-card" data-reveal data-delay="4">
+            <span class="produce-emoji" role="img" aria-label="Oranges">🍊</span>
+            <h3 class="produce-name">Oranges</h3>
+            <span class="produce-badge produce-badge--seasonal">Seasonal</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION (Mist) -->
+    <section class="yg-section yg-section--mist" id="contact" aria-labelledby="contact-heading">
+      <div class="yg-wrap">
+        <div class="yg-contact-layout">
+          <div class="yg-contact-info" data-reveal>
+            <p class="yg-kicker">Get in touch</p>
+            <h2 class="yg-contact-info__title" id="contact-heading">Work with us.</h2>
+            <p class="yg-contact-info__body">Are you a buyer, a processor, an NGO or an agribusiness partner? We want to talk about reliable, high-quality supply.</p>
+            <div class="yg-contact-info__item">
+              <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="M22 6l-10 7L2 6"/>
+              </svg>
+              <a href="mailto:supply@ctfarmers.yigagroups.com">supply@ctfarmers.yigagroups.com</a>
+            </div>
+          </div>
+
+          <form class="yg-form" data-yg-form data-reveal data-delay="1">
+            <div class="yg-field">
+              <label class="yg-label" for="full-name">Full Name <span aria-hidden="true">*</span></label>
+              <input class="yg-input" type="text" id="full-name" name="name" required placeholder="Your full name" autocomplete="name">
+            </div>
+
+            <div class="yg-field">
+              <label class="yg-label" for="organisation">Organisation <span aria-hidden="true">*</span></label>
+              <input class="yg-input" type="text" id="organisation" name="organisation" required placeholder="Company, processor, NGO or business" autocomplete="organization">
+            </div>
+
+            <div class="yg-field">
+              <label class="yg-label" for="email">Email <span aria-hidden="true">*</span></label>
+              <input class="yg-input" type="email" id="email" name="email" required placeholder="you@example.com" autocomplete="email">
+            </div>
+
+            <div class="yg-field">
+              <label class="yg-label" for="interest">I am interested in <span aria-hidden="true">*</span></label>
+              <select class="yg-select" id="interest" name="interest" required>
+                <option value="" disabled selected>Select an area of interest</option>
+                <option value="Fresh produce supply">Fresh produce supply</option>
+                <option value="Wholesale">Wholesale</option>
+                <option value="Partnership">Partnership</option>
+                <option value="General enquiry">General enquiry</option>
+              </select>
+            </div>
+
+            <div class="yg-field">
+              <label class="yg-label" for="message">Message <span class="yg-label__opt">(Optional)</span></label>
+              <textarea class="yg-textarea" id="message" name="message" placeholder="Tell us about your requirements, volume needs, or delivery timelines..."></textarea>
+            </div>
+
+            <button type="submit" class="yg-btn yg-btn--primary">Get in touch</button>
+
+            <p class="yg-form__privacy">Your details are used only to respond to your enquiry. Read our <a href="#">privacy policy</a>.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="yg-footer" aria-label="Site footer">
+    <div class="yg-footer__inner">
+      <div class="yg-footer__grid">
+        <!-- Brand col -->
+        <div>
+          <p class="yg-footer__brand-name">Yiga <em>Groups</em></p>
+          <p class="yg-footer__brand-descriptor">From Innovation to Impact</p>
+          <p class="yg-footer__brand-desc">CT Farmers is the agricultural wing of Yiga Groups, growing food Africa can count on — sustainably, from land to market.</p>
+          <a class="yg-footer__parent-link" href="../Yiga Groups/Yiga-Group.html">
+            <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14" height="14"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            A Yiga Groups company
+          </a>
+        </div>
+
+        <!-- Links col 1 -->
+        <div>
+          <p class="yg-footer__col-title">CT Farmers</p>
+          <ul class="yg-footer__links">
+            <li><a href="#about">About us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#produce">In season</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Links col 2 -->
+        <div>
+          <p class="yg-footer__col-title">Yiga Groups</p>
+          <ul class="yg-footer__links">
+            <li><a href="../Yiga Groups/Yiga-Group.html">The group</a></li>
+            <li><a href="../Yiga Groups/Yiga-Group.html#wings">All wings</a></li>
+            <li><a href="../Yiga Groups/Yiga-Group.html#contact">Get in touch</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="yg-footer__bottom">
+        <p class="yg-footer__copyright">
+          © 2017–<span data-year></span> CT Farmers. A Yiga Groups company.<br>
+          Yiga Groups is part of Yiga Holdings.
+        </p>
+        <ul class="yg-footer__legal">
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts: shared first, then wing-specific -->
+  <script src="../shared/base.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>

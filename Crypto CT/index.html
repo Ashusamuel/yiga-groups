@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto CT — Web3 and digital assets, explained responsibly | A Yiga Groups company</title>
+  <meta name="description" content="Crypto CT makes Web3 understandable. Education on digital assets, blockchain, and decentralised finance — with honesty about the risks.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Crypto CT — Web3 and digital assets, explained responsibly | A Yiga Groups company">
+  <meta property="og:description" content="Crypto CT makes Web3 understandable. Education on digital assets, blockchain, and decentralised finance — with honesty about the risks.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:ital,wght@0,400..600;1,400..600&display=swap" rel="stylesheet">
+
+  <!-- Styles: shared first, then wing-specific -->
+  <link rel="stylesheet" href="../shared/tokens.css">
+  <link rel="stylesheet" href="../shared/components.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-wing="crypto">
+  <!-- Skip link -->
+  <a class="yg-skip-link" href="#main">Skip to main content</a>
+
+  <!-- NAVIGATION -->
+  <header>
+    <nav class="yg-nav" aria-label="Main navigation">
+      <div class="yg-nav__inner">
+        <!-- Parent pill (desktop only — hidden by CSS on mobile) -->
+        <a class="yg-nav__parent-pill" href="../Yiga Groups/Yiga-Group.html" aria-label="Part of Yiga Groups — visit parent site">
+          <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v9a1 1 0 001 1h4v-5h4v5h4a1 1 0 001-1v-9"/></svg>
+          Part of Yiga Groups
+        </a>
+
+        <!-- Wing name -->
+        <a class="yg-nav__brand" href="#" aria-current="page">
+          <span class="yg-nav__brand-name">Crypto <em>CT</em></span>
+        </a>
+
+        <!-- Desktop nav links -->
+        <ul class="yg-nav__links" role="list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Curriculum</a></li>
+          <li><a href="#glossary">Glossary</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Desktop CTA -->
+        <div class="yg-nav__cta">
+          <a class="yg-btn yg-btn--primary" href="#contact">Start learning</a>
+        </div>
+
+        <!-- Mobile hamburger -->
+        <button class="yg-nav__menu-btn" data-yg-menu-toggle aria-expanded="false" aria-controls="mobile-drawer" aria-label="Open menu">
+          <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MOBILE OVERLAY + DRAWER -->
+  <div class="yg-overlay" data-yg-overlay aria-hidden="true"></div>
+  <div class="yg-drawer" id="mobile-drawer" data-yg-drawer role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <button class="yg-drawer__close" data-yg-drawer-close aria-label="Close menu">
+      <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+    <ul class="yg-drawer__links" role="list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Curriculum</a></li>
+      <li><a href="#glossary">Glossary</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="../Yiga Groups/Yiga-Group.html">Yiga Groups ↗</a></li>
+    </ul>
+    <div class="yg-drawer__cta">
+      <a class="yg-btn yg-btn--primary" href="#contact">Start learning</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- SITE-WIDE COMPLIANCE NOTICE BANNER (Required first element inside main) -->
+    <div class="yg-compliance yg-compliance--banner" role="note">
+      <div class="yg-wrap">
+        <p><strong>Risk notice:</strong> Digital assets are volatile and you can lose everything you put in. This is education, not financial advice.</p>
+      </div>
+    </div>
+
+    <!-- HERO SECTION (Navy) -->
+    <section class="yg-hero" id="hero" aria-label="Introduction">
+      <div class="yg-hero__inner">
+        <div class="yg-hero__content" data-reveal>
+          <p class="yg-hero__kicker">Web3 · Cryptocurrency · Digital Assets</p>
+          <h1>Web3, <em>understood</em>.</h1>
+          <p class="yg-hero__lead">We make the technology behind digital assets understandable. No predictions. No hype. Just clear education on how it works — and what can go wrong.</p>
+          <div class="yg-btn-row">
+            <a class="yg-btn yg-btn--primary" href="#contact">Start learning</a>
+            <a class="yg-btn yg-btn--ghost-white" href="../Yiga Groups/Yiga-Group.html">Meet the group</a>
+          </div>
+        </div>
+
+        <div class="yg-hero__visual" data-reveal data-delay="1">
+          <div class="wing-visual" aria-hidden="true">
+            <svg class="hex-svg" viewBox="0 0 420 360" role="img" aria-label="Hexagonal blockchain network diagram">
+              <!-- Background network lines -->
+              <g stroke="#818CF8" stroke-width="0.5" opacity="0.6">
+                <!-- Connecting lines between active hex centers and network neighbors -->
+                <line x1="210" y1="90" x2="157" y2="180" stroke-dasharray="3 3" />
+                <line x1="210" y1="90" x2="263" y2="180" stroke-dasharray="3 3" />
+                <line x1="157" y1="180" x2="263" y2="180" />
+                <line x1="157" y1="180" x2="210" y2="270" stroke-dasharray="3 3" />
+                <line x1="263" y1="180" x2="210" y2="270" stroke-dasharray="3 3" />
+                <line x1="105" y1="90" x2="157" y2="180" opacity="0.4" />
+                <line x1="315" y1="90" x2="263" y2="180" opacity="0.4" />
+                <line x1="52" y1="180" x2="157" y2="180" opacity="0.4" />
+                <line x1="368" y1="180" x2="263" y2="180" opacity="0.4" />
+                <line x1="105" y1="270" x2="210" y2="270" opacity="0.4" />
+                <line x1="315" y1="270" x2="210" y2="270" opacity="0.4" />
+              </g>
+
+              <!-- Large Hexagons (radius = 45) -->
+              <!-- Row 1 -->
+              <polygon class="hex-poly" points="150,90 127.5,129 82.5,129 60,90 82.5,51 127.5,51" fill="none" stroke="#818CF8" stroke-width="1" opacity="0.4" />
+              <!-- Active block 1 -->
+              <polygon class="hex-poly hex-poly--active" points="255,90 232.5,129 187.5,129 165,90 187.5,51 232.5,51" fill="rgba(129,140,248,0.18)" stroke="#818CF8" stroke-width="1.5" opacity="0.85" />
+              <polygon class="hex-poly" points="360,90 337.5,129 292.5,129 270,90 292.5,51 337.5,51" fill="none" stroke="#818CF8" stroke-width="1" opacity="0.4" />
+
+              <!-- Row 2 -->
+              <polygon class="hex-poly" points="97,180 74.5,219 29.5,219 7,180 29.5,141 74.5,141" fill="none" stroke="#818CF8" stroke-width="1" opacity="0.4" />
+              <!-- Active block 2 -->
+              <polygon class="hex-poly hex-poly--active" points="202,180 179.5,219 134.5,219 112,180 134.5,141 179.5,141" fill="rgba(129,140,248,0.18)" stroke="#818CF8" stroke-width="1.5" opacity="0.85" />
+              <!-- Active block 3 -->
+              <polygon class="hex-poly hex-poly--active" points="308,180 285.5,219 240.5,219 218,180 240.5,141 285.5,141" fill="rgba(129,140,248,0.18)" stroke="#818CF8" stroke-width="1.5" opacity="0.85" />
+              <polygon class="hex-poly" points="413,180 390.5,219 345.5,219 323,180 345.5,141 390.5,141" fill="none" stroke="#818CF8" stroke-width="1" opacity="0.4" />
+
+              <!-- Row 3 -->
+              <polygon class="hex-poly" points="150,270 127.5,309 82.5,309 60,270 82.5,231 127.5,231" fill="none" stroke="#818CF8" stroke-width="1" opacity="0.4" />
+              <!-- Active block 4 -->
+              <polygon class="hex-poly hex-poly--active" points="255,270 232.5,309 187.5,309 165,270 187.5,231 232.5,231" fill="rgba(129,140,248,0.18)" stroke="#818CF8" stroke-width="1.5" opacity="0.85" />
+              <polygon class="hex-poly" points="360,270 337.5,309 292.5,309 270,270 292.5,231 337.5,231" fill="none" stroke="#818CF8" stroke-width="1" opacity="0.4" />
+
+              <!-- Small Hexagons (radius = 15) between large hexes -->
+              <polygon class="hex-poly" points="172,90 164.5,103 149.5,103 142,90 149.5,77 164.5,77" fill="none" stroke="#818CF8" stroke-width="0.75" opacity="0.35" />
+              <polygon class="hex-poly" points="278,90 270.5,103 255.5,103 248,90 255.5,77 270.5,77" fill="none" stroke="#818CF8" stroke-width="0.75" opacity="0.35" />
+              <polygon class="hex-poly" points="120,180 112.5,193 97.5,193 90,180 97.5,167 112.5,167" fill="none" stroke="#818CF8" stroke-width="0.75" opacity="0.35" />
+              <polygon class="hex-poly" points="225,180 217.5,193 202.5,193 195,180 202.5,167 217.5,167" fill="rgba(129,140,248,0.10)" stroke="#818CF8" stroke-width="0.75" opacity="0.45" />
+              <polygon class="hex-poly" points="330,180 322.5,193 307.5,193 300,180 307.5,167 322.5,167" fill="none" stroke="#818CF8" stroke-width="0.75" opacity="0.35" />
+              <polygon class="hex-poly" points="172,270 164.5,283 149.5,283 142,270 149.5,257 164.5,257" fill="none" stroke="#818CF8" stroke-width="0.75" opacity="0.35" />
+              <polygon class="hex-poly" points="278,270 270.5,283 255.5,283 248,270 255.5,257 270.5,257" fill="none" stroke="#818CF8" stroke-width="0.75" opacity="0.35" />
+
+              <!-- Nodes at Hex Intersections and Active Block Centers -->
+              <g fill="#818CF8" opacity="0.6">
+                <!-- Outer corner nodes -->
+                <circle cx="150" cy="90" r="3" />
+                <circle cx="127.5" cy="129" r="3" />
+                <circle cx="82.5" cy="129" r="3" />
+                <circle cx="60" cy="90" r="3" />
+                <circle cx="82.5" cy="51" r="3" />
+                <circle cx="127.5" cy="51" r="3" />
+
+                <circle cx="255" cy="90" r="3" />
+                <circle cx="232.5" cy="129" r="3" />
+                <circle cx="187.5" cy="129" r="3" />
+                <circle cx="165" cy="90" r="3" />
+                <circle cx="187.5" cy="51" r="3" />
+                <circle cx="232.5" cy="51" r="3" />
+
+                <circle cx="360" cy="90" r="3" />
+                <circle cx="337.5" cy="129" r="3" />
+                <circle cx="292.5" cy="129" r="3" />
+                <circle cx="270" cy="90" r="3" />
+
+                <circle cx="97" cy="180" r="3" />
+                <circle cx="74.5" cy="219" r="3" />
+                <circle cx="29.5" cy="219" r="3" />
+
+                <circle cx="202" cy="180" r="3" />
+                <circle cx="179.5" cy="219" r="3" />
+                <circle cx="134.5" cy="219" r="3" />
+                <circle cx="112" cy="180" r="3" />
+
+                <circle cx="308" cy="180" r="3" />
+                <circle cx="285.5" cy="219" r="3" />
+                <circle cx="240.5" cy="219" r="3" />
+                <circle cx="218" cy="180" r="3" />
+
+                <circle cx="413" cy="180" r="3" />
+                <circle cx="390.5" cy="219" r="3" />
+                <circle cx="345.5" cy="219" r="3" />
+
+                <circle cx="150" cy="270" r="3" />
+                <circle cx="127.5" cy="309" r="3" />
+                <circle cx="82.5" cy="309" r="3" />
+
+                <circle cx="255" cy="270" r="3" />
+                <circle cx="232.5" cy="309" r="3" />
+                <circle cx="187.5" cy="309" r="3" />
+
+                <circle cx="360" cy="270" r="3" />
+                <circle cx="337.5" cy="309" r="3" />
+                <circle cx="292.5" cy="309" r="3" />
+              </g>
+
+              <!-- Central active block hub nodes with glowing core -->
+              <circle cx="210" cy="90" r="4.5" fill="#818CF8" opacity="0.9" />
+              <circle cx="157" cy="180" r="4.5" fill="#818CF8" opacity="0.9" />
+              <circle cx="263" cy="180" r="4.5" fill="#818CF8" opacity="0.9" />
+              <circle cx="210" cy="270" r="4.5" fill="#818CF8" opacity="0.9" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION (Mist) -->
+    <section class="yg-section yg-section--mist" id="about" aria-labelledby="about-heading">
+      <div class="yg-wrap">
+        <header class="yg-section-header" data-reveal>
+          <p class="yg-kicker">Our approach</p>
+          <h2 class="yg-h2" id="about-heading">Clarity before <em>commitment</em>.</h2>
+          <p class="yg-lead">Crypto CT exists because too many people enter digital assets without understanding what they are getting into. We fix that. Education and clarity first.</p>
+        </header>
+
+        <div class="yg-card-grid">
+          <!-- Card 1 -->
+          <article class="yg-card" data-reveal data-delay="1">
+            <div class="yg-card__icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+              </svg>
+            </div>
+            <p class="yg-card__num">01</p>
+            <h3 class="yg-card__title">Plain language</h3>
+            <p class="yg-card__body">We define every term the first time we use it. No assumed knowledge, no jargon left unexplained. If a concept is complex, we take the time to explain it properly.</p>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="yg-card" data-reveal data-delay="2">
+            <div class="yg-card__icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <p class="yg-card__num">02</p>
+            <h3 class="yg-card__title">Risk honest</h3>
+            <p class="yg-card__body">We discuss volatility, loss scenarios and the real history of digital asset collapses in every course. Understanding the risk is not optional — it is the first lesson.</p>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="yg-card" data-reveal data-delay="3">
+            <div class="yg-card__icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M19.439 7.85c0-1.571-1.274-2.85-2.845-2.85h-1.594V3.406A2.406 2.406 0 0 0 12.594 1a2.406 2.406 0 0 0-2.406 2.406V5H8.594C7.023 5 5.75 6.279 5.75 7.85v1.594H4.156A2.406 2.406 0 0 0 1.75 11.85a2.406 2.406 0 0 0 2.406 2.406H5.75v1.594c0 1.571 1.273 2.85 2.844 2.85h1.594v1.594A2.406 2.406 0 0 0 12.594 22.7a2.406 2.406 0 0 0 2.406-2.406V18.7h1.594c1.571 0 2.845-1.279 2.845-2.85v-1.594h1.594A2.406 2.406 0 0 0 23.439 11.85a2.406 2.406 0 0 0-2.406-2.406h-1.594V7.85z"/>
+              </svg>
+            </div>
+            <p class="yg-card__num">03</p>
+            <h3 class="yg-card__title">How it works</h3>
+            <p class="yg-card__body">We focus on the technology and mechanics: how a blockchain works, what smart contracts do, how wallets and keys function. The foundation before anything else.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES / CURRICULUM SECTION (White) -->
+    <section class="yg-section yg-section--white" id="services" aria-labelledby="services-heading">
+      <div class="yg-wrap">
+        <header class="yg-section-header" data-reveal>
+          <p class="yg-kicker">What we cover</p>
+          <h2 class="yg-h2" id="services-heading">A curriculum for the <em>curious</em>.</h2>
+          <p class="yg-lead">Our courses are structured for people who want to understand — not speculate. From complete beginner to informed participant.</p>
+        </header>
+
+        <div class="yg-card-grid">
+          <!-- Service Card 1 -->
+          <article class="yg-card" data-reveal data-delay="1">
+            <div class="yg-card__icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <rect x="2" y="7" width="8" height="8" rx="1"/>
+                <rect x="14" y="7" width="8" height="8" rx="1"/>
+                <path d="M10 11h4"/>
+                <path d="M6 7V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v3"/>
+              </svg>
+            </div>
+            <p class="yg-card__num">Course 01</p>
+            <h3 class="yg-card__title">Blockchain Basics</h3>
+            <p class="yg-card__body">What a blockchain is, how it records data, what makes it different from a regular database. No code. No maths. Just the idea, clearly explained.</p>
+          </article>
+
+          <!-- Service Card 2 -->
+          <article class="yg-card" data-reveal data-delay="2">
+            <div class="yg-card__icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="8" cy="15" r="4"/>
+                <path d="M10.85 12.15L19 4"/>
+                <path d="M18 5l2 2"/>
+                <path d="M15 8l2 2"/>
+              </svg>
+            </div>
+            <p class="yg-card__num">Course 02</p>
+            <h3 class="yg-card__title">Digital Assets</h3>
+            <p class="yg-card__body">What cryptocurrency is, how wallets and keys work, the difference between coins and tokens, what NFTs actually are. Plain definitions, no predictions.</p>
+          </article>
+
+          <!-- Service Card 3 -->
+          <article class="yg-card" data-reveal data-delay="3">
+            <div class="yg-card__icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M2 12h20"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+            </div>
+            <p class="yg-card__num">Course 03</p>
+            <h3 class="yg-card__title">DeFi &amp; Web3</h3>
+            <p class="yg-card__body">Decentralised finance, smart contracts, DAOs and the emerging internet of ownership. The opportunities and the risks, held in equal view.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS SECTION (Royal Blue) -->
+    <section class="yg-stats" aria-label="Key statistics">
+      <div class="yg-stats__grid">
+        <div class="yg-stat" data-reveal>
+          <span class="yg-stat__num" aria-label="Over 500 learners enrolled">
+            <span data-count="500">500</span><span class="yg-stat__suffix" aria-hidden="true">+</span>
+          </span>
+          <span class="yg-stat__label">Learners</span>
+          <span class="yg-stat__context">Enrolled in courses</span>
+        </div>
+
+        <div class="yg-stat" data-reveal data-delay="1">
+          <span class="yg-stat__num" aria-label="Over 25 lessons across courses">
+            <span data-count="25">25</span><span class="yg-stat__suffix" aria-hidden="true">+</span>
+          </span>
+          <span class="yg-stat__label">Lessons</span>
+          <span class="yg-stat__context">Across 3 courses</span>
+        </div>
+
+        <div class="yg-stat" data-reveal data-delay="2">
+          <span class="yg-stat__num" aria-label="8 topics covered">
+            <span data-count="8">8</span>
+          </span>
+          <span class="yg-stat__label">Topics covered</span>
+          <span class="yg-stat__context">From blockchain to DeFi</span>
+        </div>
+
+        <div class="yg-stat" data-reveal data-delay="3">
+          <span class="yg-stat__num" aria-label="Founded in 2021">
+            <span data-count="2021">2021</span>
+          </span>
+          <span class="yg-stat__label">Founded</span>
+          <span class="yg-stat__context">Part of Yiga Groups</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- UNIQUE SECTION: GLOSSARY (White) -->
+    <section class="yg-section yg-section--white" id="glossary" aria-labelledby="glossary-heading">
+      <div class="yg-wrap">
+        <header class="yg-section-header" data-reveal>
+          <p class="yg-kicker">Key terms</p>
+          <h2 class="yg-h2" id="glossary-heading">Start with the <em>words</em>.</h2>
+          <p class="yg-lead">If you do not know what a term means, you cannot safely evaluate a decision that uses it. Here are the three most important definitions to start with.</p>
+        </header>
+
+        <div class="glossary-grid">
+          <!-- Term 1 -->
+          <article class="glossary-card" data-reveal data-delay="1">
+            <h3 class="glossary-term">Blockchain</h3>
+            <p class="glossary-def">A shared record book that no single person controls. Every entry is verified by a network of computers and cannot be changed once written. It is a technology, not a currency.</p>
+          </article>
+
+          <!-- Term 2 -->
+          <article class="glossary-card" data-reveal data-delay="2">
+            <h3 class="glossary-term">Wallet</h3>
+            <p class="glossary-def">Software (and sometimes hardware) that stores the private keys needed to prove ownership of digital assets. Losing your key means losing access. There is no password reset.</p>
+          </article>
+
+          <!-- Term 3 -->
+          <article class="glossary-card" data-reveal data-delay="3">
+            <h3 class="glossary-term">Volatility</h3>
+            <p class="glossary-def">How quickly and widely the price of an asset moves. Digital assets are highly volatile — meaning large gains and large losses both happen quickly and without warning.</p>
+          </article>
+        </div>
+
+        <p class="glossary-note" data-reveal data-delay="4">Our full glossary covers 40+ terms. Start with these three, then take the Blockchain Basics course.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION (Mist) -->
+    <section class="yg-section yg-section--mist" id="contact" aria-labelledby="contact-heading">
+      <div class="yg-wrap">
+        <!-- COMPLIANCE NOTICE (Repeat - prominent above contact form) -->
+        <div class="yg-compliance" role="note" data-reveal>
+          <p><strong>Risk notice:</strong> Digital assets are volatile and you can lose everything you put in. This is education, not financial advice.</p>
+        </div>
+
+        <div class="yg-contact-layout">
+          <!-- Left side: Contact info -->
+          <div class="yg-contact-info" data-reveal>
+            <p class="yg-kicker">Start learning</p>
+            <h2 class="yg-contact-info__title" id="contact-heading">Start learning.</h2>
+            <p class="yg-contact-info__body">Tell us what you want to understand and where you are starting from. We will point you to the right course.</p>
+            <div class="yg-contact-info__item">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/>
+              </svg>
+              <a href="mailto:learn@cryptoct.yigagroups.com">learn@cryptoct.yigagroups.com</a>
+            </div>
+          </div>
+
+          <!-- Right side: Contact form -->
+          <form class="yg-form" data-yg-form data-reveal data-delay="1">
+            <div class="yg-field">
+              <label class="yg-label" for="full-name">Full Name <span aria-hidden="true">*</span></label>
+              <input class="yg-input" type="text" id="full-name" name="name" required placeholder="Your full name" autocomplete="name">
+            </div>
+
+            <div class="yg-field">
+              <label class="yg-label" for="email">Email <span aria-hidden="true">*</span></label>
+              <input class="yg-input" type="email" id="email" name="email" required placeholder="you@example.com" autocomplete="email">
+            </div>
+
+            <div class="yg-field">
+              <label class="yg-label" for="learning-track">What do you want to learn? <span aria-hidden="true">*</span></label>
+              <div class="yg-select-wrap">
+                <select class="yg-select" id="learning-track" name="track" required>
+                  <option value="" disabled selected>Select a curriculum track</option>
+                  <option value="blockchain-basics">Blockchain Basics</option>
+                  <option value="digital-assets">Digital Assets</option>
+                  <option value="defi-web3">DeFi &amp; Web3</option>
+                  <option value="start-from-scratch">I want to start from scratch</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="yg-field">
+              <label class="yg-label" for="message">Message <span class="yg-label__opt">(optional)</span></label>
+              <textarea class="yg-textarea" id="message" name="message" placeholder="Tell us about what you want to understand or where you are starting from..."></textarea>
+            </div>
+
+            <button type="submit" class="yg-btn yg-btn--primary">Get in touch</button>
+
+            <p class="yg-form__privacy">
+              Your details are used only to respond to your inquiry. Read our <a href="#">privacy policy</a>.<br>
+              <strong>Important notice:</strong> We do not offer investment advice, asset management, price predictions or trading signals. Crypto CT teaches only.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER (Navy) -->
+  <footer class="yg-footer" aria-label="Site footer">
+    <div class="yg-footer__inner">
+      <div class="yg-footer__grid">
+        <!-- Brand col -->
+        <div>
+          <p class="yg-footer__brand-name">Yiga <em>Groups</em></p>
+          <p class="yg-footer__brand-descriptor">From Innovation to Impact</p>
+          <p class="yg-footer__brand-desc">Crypto CT is the Web3 education wing of Yiga Groups. Digital assets are volatile. This is education, not financial advice.</p>
+          <a class="yg-footer__parent-link" href="../Yiga Groups/Yiga-Group.html">
+            <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14" height="14"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            A Yiga Groups company
+          </a>
+        </div>
+
+        <!-- Links col 1 -->
+        <div>
+          <p class="yg-footer__col-title">Crypto CT</p>
+          <ul class="yg-footer__links">
+            <li><a href="#about">About us</a></li>
+            <li><a href="#services">Curriculum</a></li>
+            <li><a href="#glossary">Glossary</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Links col 2 -->
+        <div>
+          <p class="yg-footer__col-title">Yiga Groups</p>
+          <ul class="yg-footer__links">
+            <li><a href="../Yiga Groups/Yiga-Group.html">The group</a></li>
+            <li><a href="../Yiga Groups/Yiga-Group.html#wings">All wings</a></li>
+            <li><a href="../Yiga Groups/Yiga-Group.html#contact">Get in touch</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="yg-footer__bottom">
+        <p class="yg-footer__copyright">
+          © 2017–<span data-year></span> Crypto CT. A Yiga Groups company.<br>
+          Yiga Groups is part of Yiga Holdings.
+        </p>
+        <ul class="yg-footer__legal">
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts: shared first, then wing-specific -->
+  <script src="../shared/base.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CT Labs — Software that works, simply | A Yiga Groups company</title>
+  <meta name="description" content="CT Labs builds software applications and digital platforms that make everyday work and life simpler — for the Yiga Group wings and beyond.">
+  <!-- Open Graph -->
+  <meta property="og:title" content="CT Labs — Software that works, simply | A Yiga Groups company">
+  <meta property="og:description" content="CT Labs builds software applications and digital platforms that make everyday work and life simpler — for the Yiga Group wings and beyond.">
+  <meta property="og:type" content="website">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:ital,wght@0,400..600;1,400..600&display=swap" rel="stylesheet">
+  <!-- Styles: shared first, then wing-specific -->
+  <link rel="stylesheet" href="../shared/tokens.css">
+  <link rel="stylesheet" href="../shared/components.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-wing="labs">
+  <!-- Skip link -->
+  <a class="yg-skip-link" href="#main">Skip to main content</a>
+
+  <!-- NAV -->
+  <header>
+    <nav class="yg-nav" aria-label="Main navigation">
+      <div class="yg-nav__inner">
+        <!-- Parent pill (desktop only — hidden by CSS on mobile) -->
+        <a class="yg-nav__parent-pill" href="../Yiga Groups/Yiga-Group.html" aria-label="Part of Yiga Groups — visit parent site">
+          <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v9a1 1 0 001 1h4v-5h4v5h4a1 1 0 001-1v-9"/></svg>
+          Part of Yiga Groups
+        </a>
+        <!-- Wing name -->
+        <a class="yg-nav__brand" href="#" aria-current="page">
+          <span class="yg-nav__brand-name">CT <em>Labs</em></span>
+        </a>
+        <!-- Desktop nav links -->
+        <ul class="yg-nav__links" role="list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- Desktop CTA -->
+        <div class="yg-nav__cta">
+          <a class="yg-btn yg-btn--primary" href="#contact">Contact Us</a>
+        </div>
+        <!-- Mobile hamburger -->
+        <button class="yg-nav__menu-btn" data-yg-menu-toggle aria-expanded="false" aria-controls="mobile-drawer" aria-label="Open menu">
+          <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MOBILE OVERLAY + DRAWER -->
+  <div class="yg-overlay" data-yg-overlay aria-hidden="true"></div>
+  <div class="yg-drawer" id="mobile-drawer" data-yg-drawer role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <button class="yg-drawer__close" data-yg-drawer-close aria-label="Close menu">
+      <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+    <ul class="yg-drawer__links" role="list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="../Yiga Groups/Yiga-Group.html">Yiga Groups ↗</a></li>
+    </ul>
+    <div class="yg-drawer__cta">
+      <a class="yg-btn yg-btn--primary" href="#contact">Contact Us</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- HERO (Navy) -->
+    <section class="yg-hero" id="hero">
+      <div class="yg-hero__inner">
+        <div class="yg-hero__content" data-reveal>
+          <p class="yg-hero__kicker">Software · Technology · Innovation</p>
+          <h1 class="yg-h1">Software that <em>works</em>.</h1>
+          <p class="yg-hero__lead">We build applications and digital platforms that make everyday work and life simpler. For the Yiga Group wings first — and for clients who need the same standard.</p>
+          <div class="yg-btn-row">
+            <a href="#products" class="yg-btn yg-btn--primary">See our products</a>
+            <a href="../Yiga Groups/Yiga-Group.html" class="yg-btn yg-btn--ghost-white">Meet the group</a>
+          </div>
+        </div>
+        <div class="yg-hero__visual" data-reveal data-delay="1">
+          <div class="code-window" aria-hidden="true">
+            <div class="code-window__bar">
+              <span class="code-dot code-dot--red"></span>
+              <span class="code-dot code-dot--yellow"></span>
+              <span class="code-dot code-dot--green"></span>
+              <span class="code-window__filename">app.js — CT Labs</span>
+            </div>
+            <div class="code-window__body">
+              <span class="code-line"><span class="tok-cm">// CT Labs — Wings OS core</span></span>
+              <span class="code-line"><span class="tok-kw">import</span> <span class="tok-def">{ createApp } </span><span class="tok-kw">from</span> <span class="tok-str">'./core'</span></span>
+              <span class="code-line"></span>
+              <span class="code-line"><span class="tok-kw">const</span> <span class="tok-def">app = </span><span class="tok-fn">createApp</span><span class="tok-def">({</span></span>
+              <span class="code-line">  <span class="tok-def">wing: </span><span class="tok-str">'ct-labs'</span><span class="tok-def">,</span></span>
+              <span class="code-line">  <span class="tok-def">version: </span><span class="tok-str">'2.4.1'</span><span class="tok-def">,</span></span>
+              <span class="code-line">  <span class="tok-def">uptime: </span><span class="tok-num">99.9</span></span>
+              <span class="code-line"><span class="tok-def">})</span></span>
+              <span class="code-line"></span>
+              <span class="code-line"><span class="tok-cm">// Currently serving 5,000+ users</span><span class="code-cursor"></span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT (Mist) -->
+    <section class="yg-section yg-section--mist" id="about">
+      <div class="yg-wrap">
+        <div class="yg-section-header" data-reveal>
+          <p class="yg-kicker">Our approach</p>
+          <h2 class="yg-h2">Built once, <em>maintained</em> properly.</h2>
+          <p class="yg-lead">CT Labs is the group's internal software studio. We do not move fast and break things. We design carefully, build well, and support what we ship.</p>
+        </div>
+        <div class="yg-card-grid">
+          <article class="yg-card" data-reveal data-delay="1">
+            <div class="yg-card__icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <p class="yg-card__num">01</p>
+            <h3 class="yg-card__title">Works on your device</h3>
+            <p class="yg-card__body">We build for the hardware and networks people actually have — not the newest phone or the fastest connection.</p>
+          </article>
+          <article class="yg-card" data-reveal data-delay="2">
+            <div class="yg-card__icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+            </div>
+            <p class="yg-card__num">02</p>
+            <h3 class="yg-card__title">Designed from use</h3>
+            <p class="yg-card__body">Every feature starts with how real people work. We do not add features to look impressive; we cut until what is left is exactly what is needed.</p>
+          </article>
+          <article class="yg-card" data-reveal data-delay="3">
+            <div class="yg-card__icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+            </div>
+            <p class="yg-card__num">03</p>
+            <h3 class="yg-card__title">Supported</h3>
+            <p class="yg-card__body">We maintain what we ship. When a bug surfaces, we fix it. Our apps do not drift into neglect.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES (White) -->
+    <section class="yg-section yg-section--white" id="services">
+      <div class="yg-wrap">
+        <div class="yg-section-header" data-reveal>
+          <p class="yg-kicker">What we build</p>
+          <h2 class="yg-h2">Products that <em>do the work</em>.</h2>
+          <p class="yg-lead">From operational tools for the Yiga wings to platforms available to outside clients, our software is built around genuine problems.</p>
+        </div>
+        <div class="yg-card-grid yg-card-grid--4">
+          <article class="yg-card" data-reveal data-delay="1">
+            <div class="yg-card__icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            </div>
+            <p class="yg-card__num">01</p>
+            <h3 class="yg-card__title">Internal Tools</h3>
+            <p class="yg-card__body">Software that runs the Yiga Group operations — inventory, logistics, reporting and communication tools built for each wing's specific workflow.</p>
+          </article>
+          <article class="yg-card" data-reveal data-delay="2">
+            <div class="yg-card__icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            </div>
+            <p class="yg-card__num">02</p>
+            <h3 class="yg-card__title">Web Platforms</h3>
+            <p class="yg-card__body">Full-stack web applications for business use. Clean, fast and accessible — designed to work on low-bandwidth connections.</p>
+          </article>
+          <article class="yg-card" data-reveal data-delay="3">
+            <div class="yg-card__icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+            </div>
+            <p class="yg-card__num">03</p>
+            <h3 class="yg-card__title">Mobile Apps</h3>
+            <p class="yg-card__body">Android-first mobile applications for the markets we serve. Lightweight, offline-capable and tested on real devices.</p>
+          </article>
+          <article class="yg-card" data-reveal data-delay="4">
+            <div class="yg-card__icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="6" y1="3" x2="6" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path></svg>
+            </div>
+            <p class="yg-card__num">04</p>
+            <h3 class="yg-card__title">API & Integrations</h3>
+            <p class="yg-card__body">We connect systems. Payment gateways, SMS, logistics APIs — CT Labs handles the plumbing so teams can focus on the work.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS (Royal Blue) -->
+    <section class="yg-stats" aria-label="Key metrics">
+      <div class="yg-stats__grid">
+        <div class="yg-stat" data-reveal data-delay="1">
+          <span class="yg-stat__num" aria-label="Over 12 products shipped"><span data-count="12">12</span><span class="yg-stat__suffix">+</span></span>
+          <span class="yg-stat__label">Products shipped</span>
+          <span class="yg-stat__context">Across Yiga wings</span>
+        </div>
+        <div class="yg-stat" data-reveal data-delay="2">
+          <span class="yg-stat__num" aria-label="Over 5,000 daily active users"><span data-count="5000">5000</span><span class="yg-stat__suffix">+</span></span>
+          <span class="yg-stat__label">Active users</span>
+          <span class="yg-stat__context">Daily active</span>
+        </div>
+        <div class="yg-stat" data-reveal data-delay="3">
+          <span class="yg-stat__num" aria-label="Building since 2017"><span>2017</span></span>
+          <span class="yg-stat__label">Building since</span>
+          <span class="yg-stat__context">Part of Yiga Groups</span>
+        </div>
+        <div class="yg-stat" data-reveal data-delay="4">
+          <span class="yg-stat__num" aria-label="99.9% uptime SLA"><span data-count="99">99</span><span class="yg-stat__suffix">.9%</span></span>
+          <span class="yg-stat__label">Uptime SLA</span>
+          <span class="yg-stat__context">On all hosted products</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- UNIQUE SECTION — PRODUCTS SHOWCASE (Mist) -->
+    <section class="yg-section yg-section--mist" id="products">
+      <div class="yg-wrap">
+        <div class="yg-section-header" data-reveal>
+          <p class="yg-kicker">Current products</p>
+          <h2 class="yg-h2">What we have <em>shipped</em>.</h2>
+          <p class="yg-lead">A selection of what CT Labs has built and continues to maintain.</p>
+        </div>
+        <div class="yg-card-grid yg-card-grid--2">
+          <!-- Product 1 -->
+          <article class="yg-card product-card" data-reveal data-delay="1">
+            <h3 class="product-card__title">Wings OS</h3>
+            <p class="product-card__desc">The internal operating dashboard for Yiga Group wings.</p>
+            <div class="product-tags" aria-label="Tags for Wings OS">
+              <span class="product-tag">Internal</span>
+              <span class="product-tag">Dashboard</span>
+              <span class="product-tag">Web</span>
+            </div>
+            <div class="product-card__action">
+              <a href="#contact" class="yg-btn yg-btn--ghost product-card__btn">Request access</a>
+            </div>
+          </article>
+
+          <!-- Product 2 -->
+          <article class="yg-card product-card" data-reveal data-delay="2">
+            <h3 class="product-card__title">FarmTrack</h3>
+            <p class="product-card__desc">Crop tracking and yield reporting for CT Farmers field operations.</p>
+            <div class="product-tags" aria-label="Tags for FarmTrack">
+              <span class="product-tag">Mobile</span>
+              <span class="product-tag">Agriculture</span>
+              <span class="product-tag">Offline-capable</span>
+            </div>
+            <div class="product-card__action">
+              <a href="#contact" class="yg-btn yg-btn--ghost product-card__btn">Request access</a>
+            </div>
+          </article>
+
+          <!-- Product 3 -->
+          <article class="yg-card product-card" data-reveal data-delay="3">
+            <h3 class="product-card__title">BuildLog</h3>
+            <p class="product-card__desc">Site progress tracking and client reporting for CT Builders projects.</p>
+            <div class="product-tags" aria-label="Tags for BuildLog">
+              <span class="product-tag">Web</span>
+              <span class="product-tag">Construction</span>
+              <span class="product-tag">Reports</span>
+            </div>
+            <div class="product-card__action">
+              <a href="#contact" class="yg-btn yg-btn--ghost product-card__btn">Request access</a>
+            </div>
+          </article>
+
+          <!-- Product 4 -->
+          <article class="yg-card product-card" data-reveal data-delay="4">
+            <h3 class="product-card__title">PayBridge</h3>
+            <p class="product-card__desc">A unified payment gateway integration layer for all Yiga wings.</p>
+            <div class="product-tags" aria-label="Tags for PayBridge">
+              <span class="product-tag">API</span>
+              <span class="product-tag">Payments</span>
+              <span class="product-tag">Integration</span>
+            </div>
+            <div class="product-card__action">
+              <a href="#contact" class="yg-btn yg-btn--ghost product-card__btn">Request access</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT (Mist) -->
+    <section class="yg-section yg-section--mist" id="contact">
+      <div class="yg-wrap">
+        <div class="yg-contact-layout">
+          <!-- Left side -->
+          <div class="yg-contact-info" data-reveal>
+            <p class="yg-kicker">Get in touch</p>
+            <h2 class="yg-contact-info__title">Work with us.</h2>
+            <p class="yg-contact-info__body">Got a software problem we could solve? Talk to our team. We take on a small number of external projects alongside our internal work.</p>
+            <div class="yg-contact-info__item">
+              <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <a href="mailto:hello@ctlabs.yigagroups.com">hello@ctlabs.yigagroups.com</a>
+            </div>
+          </div>
+
+          <!-- Right side -->
+          <form class="yg-form" data-yg-form data-reveal data-delay="1">
+            <div class="yg-field">
+              <label class="yg-label" for="contact-name">Full Name</label>
+              <input class="yg-input" type="text" id="contact-name" name="name" required autocomplete="name" placeholder="Ada Lovelace">
+            </div>
+            <div class="yg-field">
+              <label class="yg-label" for="contact-email">Email</label>
+              <input class="yg-input" type="email" id="contact-email" name="email" required autocomplete="email" placeholder="ada@example.com">
+            </div>
+            <div class="yg-field">
+              <label class="yg-label" for="contact-company">Company / Organisation <span class="yg-label__opt">(optional)</span></label>
+              <input class="yg-input" type="text" id="contact-company" name="company" autocomplete="organization" placeholder="Acme Ltd.">
+            </div>
+            <div class="yg-field">
+              <label class="yg-label" for="contact-message">Describe what you need</label>
+              <textarea class="yg-textarea" id="contact-message" name="message" required placeholder="Tell us about your project, timeline, and requirements..."></textarea>
+            </div>
+            <button type="submit" class="yg-btn yg-btn--primary">Start the conversation</button>
+            <p class="yg-form__privacy">Your details are used only to respond to your enquiry. Read our <a href="#">privacy policy</a>.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="yg-footer" aria-label="Site footer">
+    <div class="yg-footer__inner">
+      <div class="yg-footer__grid">
+        <!-- Brand col -->
+        <div>
+          <p class="yg-footer__brand-name">Yiga <em>Groups</em></p>
+          <p class="yg-footer__brand-descriptor">From Innovation to Impact</p>
+          <p class="yg-footer__brand-desc">CT Labs is the software studio of Yiga Groups, building applications and platforms that make work simpler since 2017.</p>
+          <a class="yg-footer__parent-link" href="../Yiga Groups/Yiga-Group.html">
+            <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14" height="14"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            A Yiga Groups company
+          </a>
+        </div>
+        <!-- Links col 1 -->
+        <div>
+          <p class="yg-footer__col-title">CT Labs</p>
+          <ul class="yg-footer__links">
+            <li><a href="#about">About us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Links col 2 -->
+        <div>
+          <p class="yg-footer__col-title">Yiga Groups</p>
+          <ul class="yg-footer__links">
+            <li><a href="../Yiga Groups/Yiga-Group.html">The group</a></li>
+            <li><a href="../Yiga Groups/Yiga-Group.html#wings">All wings</a></li>
+            <li><a href="../Yiga Groups/Yiga-Group.html#contact">Get in touch</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="yg-footer__bottom">
+        <p class="yg-footer__copyright">
+          © 2017–<span data-year></span> CT Labs. A Yiga Groups company.<br>
+          Yiga Groups is part of Yiga Holdings.
+        </p>
+        <ul class="yg-footer__legal">
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts: shared first, then wing-specific -->
+  <script src="../shared/base.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>

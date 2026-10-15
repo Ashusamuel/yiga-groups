@@ -1,0 +1,2 @@
+# What they do
+Agricultural ventures built on sustainable, innovation-led farming practices — from land to yield. CT Farmers treats food production as infrastructure: a wing that has to work regardless of how the others are doing.

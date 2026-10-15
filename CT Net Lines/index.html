@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en" data-wing="net">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CT Net Lines — Reliable internet connectivity across Africa | A Yiga Groups company</title>
+  <meta name="description" content="CT Net Lines delivers dependable, high-speed internet to homes, businesses and institutions. Infrastructure built to last.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="CT Net Lines — Reliable internet connectivity across Africa | A Yiga Groups company">
+  <meta property="og:description" content="CT Net Lines delivers dependable, high-speed internet to homes, businesses and institutions. Infrastructure built to last.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts: Fraunces & Inter ONLY -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:ital,wght@0,400..600;1,400..600&display=swap" rel="stylesheet">
+
+  <!-- Styles: shared first, then wing-specific -->
+  <link rel="stylesheet" href="../shared/tokens.css">
+  <link rel="stylesheet" href="../shared/components.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Skip link for keyboard accessibility -->
+  <a class="yg-skip-link" href="#main">Skip to main content</a>
+
+  <!-- NAVIGATION -->
+  <header>
+    <nav class="yg-nav" aria-label="Main navigation">
+      <div class="yg-nav__inner">
+        <!-- Parent pill (desktop only — hidden by CSS on mobile) -->
+        <a class="yg-nav__parent-pill" href="../Yiga Groups/Yiga-Group.html" aria-label="Part of Yiga Groups — visit parent site">
+          <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v9a1 1 0 001 1h4v-5h4v5h4a1 1 0 001-1v-9"/></svg>
+          Part of Yiga Groups
+        </a>
+
+        <!-- Wing name -->
+        <a class="yg-nav__brand" href="#" aria-current="page">
+          <span class="yg-nav__brand-name">CT Net Lines</span>
+        </a>
+
+        <!-- Desktop nav links -->
+        <ul class="yg-nav__links" role="list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#coverage">Coverage</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Desktop CTA -->
+        <div class="yg-nav__cta">
+          <a class="yg-btn yg-btn--primary" href="#contact">Contact Us</a>
+        </div>
+
+        <!-- Mobile hamburger -->
+        <button class="yg-nav__menu-btn" data-yg-menu-toggle aria-expanded="false" aria-controls="mobile-drawer" aria-label="Open menu">
+          <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MOBILE OVERLAY + DRAWER -->
+  <div class="yg-overlay" data-yg-overlay aria-hidden="true"></div>
+  <div class="yg-drawer" id="mobile-drawer" data-yg-drawer role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <button class="yg-drawer__close" data-yg-drawer-close aria-label="Close menu">
+      <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+    <ul class="yg-drawer__links" role="list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#coverage">Coverage</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="../Yiga Groups/Yiga-Group.html">Yiga Groups ↗</a></li>
+    </ul>
+    <div class="yg-drawer__cta">
+      <a class="yg-btn yg-btn--primary" href="#contact">Contact Us</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- HERO SECTION (Navy background) -->
+    <section class="yg-hero" id="hero" aria-label="Introduction">
+      <div class="yg-hero__inner">
+        <div class="yg-hero__content" data-reveal>
+          <p class="yg-hero__kicker">Internet · Connectivity · Telecommunications</p>
+          <h1 class="yg-h1"><em>Connected</em>, reliably.</h1>
+          <p class="yg-hero__lead">We build and run the internet infrastructure that homes, businesses and institutions depend on — every day, in every condition.</p>
+          <div class="yg-btn-row">
+            <a class="yg-btn yg-btn--primary" href="#coverage">Check coverage</a>
+            <a class="yg-btn yg-btn--ghost-white" href="../Yiga Groups/Yiga-Group.html">Meet the group</a>
+          </div>
+        </div>
+
+        <div class="yg-hero__visual" data-reveal data-delay="2">
+          <div class="wing-visual">
+            <svg viewBox="0 0 400 400" width="400" height="400" aria-label="Network topology diagram showing interconnected hubs and nodes" role="img">
+              <defs>
+                <!-- Central glow -->
+                <radialGradient id="netCenterGlow" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#93C5FD" stop-opacity="0.35"/>
+                  <stop offset="100%" stop-color="#93C5FD" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+
+              <!-- Center ambient glow -->
+              <circle cx="200" cy="200" r="130" fill="url(#netCenterGlow)"/>
+
+              <!-- Outer connections to small nodes -->
+              <!-- Outer 0 (340, 200) to (384, 151) and (384, 249) -->
+              <line x1="340" y1="200" x2="384" y2="151" stroke="#93C5FD" stroke-width="1" stroke-opacity="0.4"/>
+              <line x1="340" y1="200" x2="384" y2="249" stroke="#93C5FD" stroke-width="1" stroke-opacity="0.4"/>
+
+              <!-- Outer 60 (270, 321) to (334, 334) and (249, 384) -->
+              <line x1="270" y1="321" x2="334" y2="334" stroke="#93C5FD" stroke-width="1" stroke-opacity="0.4"/>
+              <line x1="270" y1="321" x2="249" y2="384" stroke="#93C5FD" stroke-width="1" stroke-opacity="0.4"/>
+
+              <!-- Outer 120 (130, 321) to (151, 384) and (66, 334) -->
+              <line x1="130" y1="321" x2="151" y2="384" stroke="#93C5FD" stroke-width="1" stroke-opacity="0.4"/>
+              <line x1="130" y1="321" x2="66" y2="334" stroke="#93C5FD" stroke-width="1" stroke-opacity="0.4"/>
+
+              <!-- Outer 180 (60, 200) to (16, 249) and (16, 151) -->
+              <line x1="60" y1="200" x2="16" y2="249" stroke="#93C5FD" stroke-width="1" stroke-opacity="0.4"/>
+              <line x1="60" y1="200" x2="16" y2="151" stroke="#93C5FD" stroke-width="1" stroke-opacity="0.4"/>
+
+              <!-- Outer 240 (130, 79) to (66, 66) and (151, 16) -->
+              <line x1="130" y1="79" x2="66" y2="66" stroke="#93C5FD" stroke-width="1" stroke-opacity="0.4"/>
+              <line x1="130" y1="79" x2="151" y2="16" stroke="#93C5FD" stroke-width="1" stroke-opacity="0.4"/>
+
+              <!-- Outer 300 (270, 79) to (249, 16) and (334, 66) -->
+              <line x1="270" y1="79" x2="249" y2="16" stroke="#93C5FD" stroke-width="1" stroke-opacity="0.4"/>
+              <line x1="270" y1="79" x2="334" y2="66" stroke="#93C5FD" stroke-width="1" stroke-opacity="0.4"/>
+
+              <!-- Central backbone lines to 6 outer nodes -->
+              <line x1="200" y1="200" x2="340" y2="200" stroke="#93C5FD" stroke-width="1.5" stroke-opacity="0.45"/>
+              <line x1="200" y1="200" x2="270" y2="321" stroke="#93C5FD" stroke-width="1.5" stroke-opacity="0.45"/>
+              <line x1="200" y1="200" x2="130" y2="321" stroke="#93C5FD" stroke-width="1.5" stroke-opacity="0.45"/>
+              <line x1="200" y1="200" x2="60" y2="200" stroke="#93C5FD" stroke-width="1.5" stroke-opacity="0.45"/>
+              <line x1="200" y1="200" x2="130" y2="79" stroke="#93C5FD" stroke-width="1.5" stroke-opacity="0.45"/>
+              <line x1="200" y1="200" x2="270" y2="79" stroke="#93C5FD" stroke-width="1.5" stroke-opacity="0.45"/>
+
+              <!-- Ring connecting outer nodes -->
+              <polygon points="340,200 270,321 130,321 60,200 130,79 270,79" fill="none" stroke="#93C5FD" stroke-width="1" stroke-dasharray="3 5" stroke-opacity="0.25"/>
+
+              <!-- 12 smaller peripheral nodes (10px diameter, #93C5FD at 0.3 opacity) -->
+              <circle cx="384" cy="151" r="5" fill="#93C5FD" fill-opacity="0.3" stroke="#93C5FD" stroke-opacity="0.6" stroke-width="1"/>
+              <circle cx="384" cy="249" r="5" fill="#93C5FD" fill-opacity="0.3" stroke="#93C5FD" stroke-opacity="0.6" stroke-width="1"/>
+              <circle cx="334" cy="334" r="5" fill="#93C5FD" fill-opacity="0.3" stroke="#93C5FD" stroke-opacity="0.6" stroke-width="1"/>
+              <circle cx="249" cy="384" r="5" fill="#93C5FD" fill-opacity="0.3" stroke="#93C5FD" stroke-opacity="0.6" stroke-width="1"/>
+              <circle cx="151" cy="384" r="5" fill="#93C5FD" fill-opacity="0.3" stroke="#93C5FD" stroke-opacity="0.6" stroke-width="1"/>
+              <circle cx="66" cy="334" r="5" fill="#93C5FD" fill-opacity="0.3" stroke="#93C5FD" stroke-opacity="0.6" stroke-width="1"/>
+              <circle cx="16" cy="249" r="5" fill="#93C5FD" fill-opacity="0.3" stroke="#93C5FD" stroke-opacity="0.6" stroke-width="1"/>
+              <circle cx="16" cy="151" r="5" fill="#93C5FD" fill-opacity="0.3" stroke="#93C5FD" stroke-opacity="0.6" stroke-width="1"/>
+              <circle cx="66" cy="66" r="5" fill="#93C5FD" fill-opacity="0.3" stroke="#93C5FD" stroke-opacity="0.6" stroke-width="1"/>
+              <circle cx="151" cy="16" r="5" fill="#93C5FD" fill-opacity="0.3" stroke="#93C5FD" stroke-opacity="0.6" stroke-width="1"/>
+              <circle cx="249" cy="16" r="5" fill="#93C5FD" fill-opacity="0.3" stroke="#93C5FD" stroke-opacity="0.6" stroke-width="1"/>
+              <circle cx="334" cy="66" r="5" fill="#93C5FD" fill-opacity="0.3" stroke="#93C5FD" stroke-opacity="0.6" stroke-width="1"/>
+
+              <!-- 6 outer hexagonal nodes (20px diameter, #93C5FD at 0.6 opacity) -->
+              <!-- 0° (340, 200) -->
+              <polygon points="350,200 345,209 335,209 330,200 335,191 345,191" fill="#93C5FD" fill-opacity="0.6" stroke="#93C5FD" stroke-width="1.5"/>
+              <!-- 60° (270, 321) -->
+              <polygon points="280,321 275,330 265,330 260,321 265,312 275,312" fill="#93C5FD" fill-opacity="0.6" stroke="#93C5FD" stroke-width="1.5"/>
+              <!-- 120° (130, 321) -->
+              <polygon points="140,321 135,330 125,330 120,321 125,312 135,312" fill="#93C5FD" fill-opacity="0.6" stroke="#93C5FD" stroke-width="1.5"/>
+              <!-- 180° (60, 200) -->
+              <polygon points="70,200 65,209 55,209 50,200 55,191 65,191" fill="#93C5FD" fill-opacity="0.6" stroke="#93C5FD" stroke-width="1.5"/>
+              <!-- 240° (130, 79) -->
+              <polygon points="140,79 135,88 125,88 120,79 125,70 135,70" fill="#93C5FD" fill-opacity="0.6" stroke="#93C5FD" stroke-width="1.5"/>
+              <!-- 300° (270, 79) -->
+              <polygon points="280,79 275,88 265,88 260,79 265,70 275,70" fill="#93C5FD" fill-opacity="0.6" stroke="#93C5FD" stroke-width="1.5"/>
+
+              <!-- Pulsing circles expanding from center node -->
+              <circle class="net-pulse" cx="200" cy="200" r="20" fill="none" stroke="#93C5FD" stroke-width="2"/>
+              <circle class="net-pulse net-pulse--delayed" cx="200" cy="200" r="20" fill="none" stroke="#93C5FD" stroke-width="1.5"/>
+
+              <!-- Central hexagonal node (40px diameter, #93C5FD fill, stroke #0B3D91) -->
+              <polygon points="220,200 210,217 190,217 180,200 190,183 210,183" fill="#93C5FD" stroke="#0B3D91" stroke-width="2.5"/>
+              <!-- Central core point -->
+              <circle cx="200" cy="200" r="4" fill="#071A33"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION (Mist background) -->
+    <section class="yg-section yg-section--mist" id="about" aria-labelledby="about-heading">
+      <div class="yg-wrap">
+        <div class="yg-section-header" data-reveal>
+          <p class="yg-kicker">Our infrastructure</p>
+          <h2 class="yg-h2" id="about-heading">Built to <em>stay up</em>.</h2>
+          <p class="yg-lead">CT Net Lines designs, installs and operates connectivity infrastructure across Africa. We measure ourselves by uptime, speed and response time — not promises.</p>
+        </div>
+
+        <div class="yg-card-grid">
+          <!-- Card 1 -->
+          <article class="yg-card" data-reveal data-delay="1">
+            <div class="yg-card__icon" aria-hidden="true">
+              <!-- Wifi signal SVG -->
+              <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M5 12.55a11 11 0 0 1 14.08 0"/>
+                <path d="M1.42 9a16 16 0 0 1 21.16 0"/>
+                <path d="M8.53 16.11a6 6 0 0 1 6.95 0"/>
+                <line x1="12" y1="20" x2="12.01" y2="20" stroke-width="3"/>
+              </svg>
+            </div>
+            <p class="yg-card__num">01</p>
+            <h3 class="yg-card__title">High uptime</h3>
+            <p class="yg-card__body">We target 99.5% availability. When something goes wrong, our team is already on it — before most customers notice.</p>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="yg-card" data-reveal data-delay="2">
+            <div class="yg-card__icon" aria-hidden="true">
+              <!-- Shield check SVG -->
+              <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="m9 12 2 2 4-4"/>
+              </svg>
+            </div>
+            <p class="yg-card__num">02</p>
+            <h3 class="yg-card__title">Infrastructure grade</h3>
+            <p class="yg-card__body">Our backbone runs on enterprise hardware, with redundant paths so a single failure never takes down a whole area.</p>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="yg-card" data-reveal data-delay="3">
+            <div class="yg-card__icon" aria-hidden="true">
+              <!-- Clock SVG -->
+              <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <p class="yg-card__num">03</p>
+            <h3 class="yg-card__title">Fast response</h3>
+            <p class="yg-card__body">Technical issues are logged and triaged immediately. Residential response within 4 hours; business SLA within 2.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION (White background) -->
+    <section class="yg-section yg-section--white" id="services" aria-labelledby="services-heading">
+      <div class="yg-wrap">
+        <div class="yg-section-header" data-reveal>
+          <p class="yg-kicker">What we offer</p>
+          <h2 class="yg-h2" id="services-heading">Connectivity for every <em>scale</em>.</h2>
+          <p class="yg-lead">From a home in a tier-2 city to a campus or business park, we have a plan built for the load.</p>
+        </div>
+
+        <div class="yg-card-grid">
+          <!-- Service 1 -->
+          <article class="yg-card" data-reveal data-delay="1">
+            <div class="yg-card__icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+            </div>
+            <h3 class="yg-card__title">Home Broadband</h3>
+            <p class="yg-card__body">Fibre and fixed-wireless home plans from 10 Mbps to 1 Gbps. Installation in 48 hours. No hidden fees — one monthly price covers everything.</p>
+          </article>
+
+          <!-- Service 2 -->
+          <article class="yg-card" data-reveal data-delay="2">
+            <div class="yg-card__icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+              </svg>
+            </div>
+            <h3 class="yg-card__title">Business Plans</h3>
+            <p class="yg-card__body">Dedicated bandwidth, static IPs, priority SLA and 24/7 support for SMEs and enterprise. Scalable from a single office to a multi-site campus.</p>
+          </article>
+
+          <!-- Service 3 -->
+          <article class="yg-card" data-reveal data-delay="3">
+            <div class="yg-card__icon" aria-hidden="true">
+              <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <circle cx="18" cy="5" r="3"/>
+                <circle cx="6" cy="12" r="3"/>
+                <circle cx="18" cy="19" r="3"/>
+                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+              </svg>
+            </div>
+            <h3 class="yg-card__title">Infrastructure Partnerships</h3>
+            <p class="yg-card__body">We work with landlords, developers and local governments to wire up new builds and underserved areas. Long-term contracts, shared infrastructure.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS BAR (Royal Blue background) -->
+    <section class="yg-stats" aria-label="Key performance metrics">
+      <div class="yg-stats__grid">
+        <!-- Stat 1: 99.5% Uptime target -->
+        <div class="yg-stat" data-reveal>
+          <div class="yg-stat__num" aria-label="99.5% uptime target">
+            <span data-count="99">99</span><span class="yg-stat__suffix">.5%</span>
+          </div>
+          <span class="yg-stat__label">Uptime target</span>
+          <span class="yg-stat__context">Across all zones</span>
+        </div>
+
+        <!-- Stat 2: 15 Cities covered -->
+        <div class="yg-stat" data-reveal data-delay="1">
+          <div class="yg-stat__num" aria-label="15 cities covered">
+            <span data-count="15">15</span>
+          </div>
+          <span class="yg-stat__label">Cities covered</span>
+          <span class="yg-stat__context">And expanding</span>
+        </div>
+
+        <!-- Stat 3: 50,000+ Active connections -->
+        <div class="yg-stat" data-reveal data-delay="2">
+          <div class="yg-stat__num" aria-label="50,000+ active connections">
+            <span data-count="50000">50,000</span><span class="yg-stat__suffix">+</span>
+          </div>
+          <span class="yg-stat__label">Active connections</span>
+          <span class="yg-stat__context">Homes and businesses</span>
+        </div>
+
+        <!-- Stat 4: 10 Gbps Backbone capacity -->
+        <div class="yg-stat" data-reveal data-delay="3">
+          <div class="yg-stat__num" aria-label="10 Gbps backbone capacity">
+            <span data-count="10">10</span><span class="yg-stat__suffix"> Gbps</span>
+          </div>
+          <span class="yg-stat__label">Backbone capacity</span>
+          <span class="yg-stat__context">And growing</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- UNIQUE SECTION — COVERAGE MAP PLACEHOLDER (White background) -->
+    <section class="yg-section yg-section--white" id="coverage" aria-labelledby="coverage-heading">
+      <div class="yg-wrap">
+        <div class="yg-section-header yg-section-header--centre" data-reveal>
+          <p class="yg-kicker">Coverage</p>
+          <h2 class="yg-h2" id="coverage-heading">Are you <em>covered</em>?</h2>
+          <p class="yg-lead">We are expanding our network city by city. Enter your area below to check if CT Net Lines is available near you — or to register your interest for new coverage.</p>
+        </div>
+
+        <div data-reveal data-delay="1">
+          <div class="coverage-checker">
+            <input type="text" class="yg-input coverage-checker__input" placeholder="Enter your city or area" aria-label="Enter your city or area to check coverage">
+            <button class="yg-btn yg-btn--primary" id="check-coverage-btn" type="button">Check coverage</button>
+          </div>
+          <p class="coverage-result" id="coverage-result" role="status" aria-live="polite"></p>
+        </div>
+
+        <div class="coverage-cities">
+          <div class="coverage-city" data-reveal data-delay="1">
+            <h3 class="coverage-city__name">Buea</h3>
+            <span class="coverage-badge coverage-badge--available">
+              <svg aria-hidden="true" width="8" height="8" viewBox="0 0 8 8"><circle cx="4" cy="4" r="4" fill="currentColor"/></svg>
+              Available
+            </span>
+          </div>
+          <div class="coverage-city" data-reveal data-delay="2">
+            <h3 class="coverage-city__name">Douala</h3>
+            <span class="coverage-badge coverage-badge--available">
+              <svg aria-hidden="true" width="8" height="8" viewBox="0 0 8 8"><circle cx="4" cy="4" r="4" fill="currentColor"/></svg>
+              Coming soon
+            </span>
+          </div>
+          <div class="coverage-city" data-reveal data-delay="3">
+            <h3 class="coverage-city__name">Bamenda</h3>
+            <span class="coverage-badge coverage-badge--soon">
+              <svg aria-hidden="true" width="8" height="8" viewBox="0 0 8 8"><circle cx="4" cy="4" r="4" fill="currentColor"/></svg>
+              Coming soon
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION (Mist background) -->
+    <section class="yg-section yg-section--mist" id="contact" aria-labelledby="contact-heading">
+      <div class="yg-wrap">
+        <div class="yg-contact-layout">
+          <!-- Left side -->
+          <div class="yg-contact-info" data-reveal>
+            <p class="yg-kicker">Get in touch</p>
+            <h2 class="yg-contact-info__title" id="contact-heading">Get connected.</h2>
+            <p class="yg-contact-info__body">Talk to our team about a home plan, a business account, or a partnership. We will get back to you within one working day.</p>
+            <div class="yg-contact-info__item">
+              <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L1 7"/></svg>
+              <a href="mailto:connect@ctnetlines.yigagroups.com">connect@ctnetlines.yigagroups.com</a>
+            </div>
+          </div>
+
+          <!-- Right side: contact form -->
+          <div class="yg-contact-form-wrap" data-reveal data-delay="1">
+            <form class="yg-form" data-yg-form>
+              <div class="yg-field">
+                <label class="yg-label" for="contact-name">Full Name <span aria-hidden="true">*</span></label>
+                <input type="text" class="yg-input" id="contact-name" name="name" required autocomplete="name" placeholder="John Doe">
+              </div>
+
+              <div class="yg-field">
+                <label class="yg-label" for="contact-email">Email Address <span aria-hidden="true">*</span></label>
+                <input type="email" class="yg-input" id="contact-email" name="email" required autocomplete="email" placeholder="john@example.com">
+              </div>
+
+              <div class="yg-field">
+                <label class="yg-label" for="contact-type">Type of Enquiry <span aria-hidden="true">*</span></label>
+                <div class="yg-select-wrapper">
+                  <select class="yg-select" id="contact-type" name="enquiry_type" required>
+                    <option value="" disabled selected>Select enquiry type</option>
+                    <option value="home">Home plan</option>
+                    <option value="business">Business plan</option>
+                    <option value="partnership">Partnership</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="yg-field">
+                <label class="yg-label" for="contact-message">Message <span class="yg-label__opt">(optional)</span></label>
+                <textarea class="yg-textarea" id="contact-message" name="message" rows="4" placeholder="Tell us about your location, speed requirements, or timeline..."></textarea>
+              </div>
+
+              <button type="submit" class="yg-btn yg-btn--primary" style="width: 100%;">Send enquiry</button>
+
+              <p class="yg-form__privacy">Your details are used only to respond to your enquiry. Read our <a href="#">privacy policy</a>.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER (Navy background) -->
+  <footer class="yg-footer" aria-label="Site footer">
+    <div class="yg-footer__inner">
+      <div class="yg-footer__grid">
+        <!-- Brand col -->
+        <div>
+          <p class="yg-footer__brand-name">Yiga <em>Groups</em></p>
+          <p class="yg-footer__brand-descriptor">From Innovation to Impact</p>
+          <p class="yg-footer__brand-desc">CT Net Lines is the connectivity wing of Yiga Groups, keeping Africa online since 2017.</p>
+          <a class="yg-footer__parent-link" href="../Yiga Groups/Yiga-Group.html">
+            <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14" height="14"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            A Yiga Groups company
+          </a>
+        </div>
+
+        <!-- Links col 1: Wing links -->
+        <div>
+          <p class="yg-footer__col-title">CT Net Lines</p>
+          <ul class="yg-footer__links">
+            <li><a href="#about">About us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#coverage">Coverage</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Links col 2: Group links -->
+        <div>
+          <p class="yg-footer__col-title">Yiga Groups</p>
+          <ul class="yg-footer__links">
+            <li><a href="../Yiga Groups/Yiga-Group.html">The group</a></li>
+            <li><a href="../Yiga Groups/Yiga-Group.html#wings">All wings</a></li>
+            <li><a href="../Yiga Groups/Yiga-Group.html#contact">Get in touch</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="yg-footer__bottom">
+        <p class="yg-footer__copyright">
+          © 2017–<span data-year></span> CT Net Lines. A Yiga Groups company.<br>
+          Yiga Groups is part of Yiga Holdings.
+        </p>
+        <ul class="yg-footer__legal">
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts: shared first, then wing-specific -->
+  <script src="../shared/base.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+## What they do 
+Forex education and professional trading development — built to turn curiosity about markets into discipline, and discipline into a genuine skill. FXCT trains the traders before it ever talks about the trades.

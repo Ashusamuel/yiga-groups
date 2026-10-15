@@ -1,0 +1,171 @@
+/* =====================================================
+   YIGA GROUPS DESIGN SYSTEM — TOKENS v1.0
+   Shared across all 8 wing sites.
+   § References: Brand Doc §5, §6, §7, §8, §14.2
+   ===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:ital,wght@0,400..600;1,400..600&display=swap');
+
+:root {
+  /* ─── CORE PALETTE ─── */
+  --navy:  #071A33;
+  --royal: #0B3D91;
+  --blue:  #2563EB;
+  --green: #16A34A;
+  --white: #FFFFFF;
+  --mist:  #F5F7FA;
+  --ink:   #0F172A;
+
+  /* ─── EXTENDED BLUE ─── */
+  --blue-50:  #EFF6FF;
+  --blue-100: #DBEAFE;
+  --blue-400: #60A5FA;
+  --blue-700: #1D4ED8;
+  --blue-800: #1E40AF;
+
+  /* ─── EXTENDED GREEN ─── */
+  --green-50:  #F0FDF4;
+  --green-100: #DCFCE7;
+  --green-400: #4ADE80;
+  --green-700: #15803D;
+  --green-800: #166534;
+
+  /* ─── SLATE NEUTRALS ─── */
+  --slate-100: #F1F5F9;
+  --slate-200: #E2E8F0;
+  --slate-300: #CBD5E1;
+  --slate-400: #94A3B8;
+  --slate-500: #64748B;
+  --slate-600: #475569;
+  --slate-700: #334155;
+  --slate-800: #1E293B;
+
+  /* ─── SEMANTIC TOKENS (light mode) ─── */
+  --surface:         var(--white);
+  --surface-alt:     var(--mist);
+  --surface-raised:  var(--white);
+  --surface-inverse: var(--navy);
+  --border:          var(--slate-200);
+
+  --on-surface:       var(--ink);
+  --on-surface-muted: var(--slate-600);
+  --on-inverse:       var(--white);
+
+  --interactive:        var(--blue);
+  --interactive-hover:  var(--blue-700);
+  --interactive-active: var(--blue-800);
+  --interactive-subtle: var(--blue-50);
+  --on-interactive:     var(--white);
+
+  --disabled-bg:   var(--slate-200);
+  --disabled-text: var(--slate-500);
+  --focus-ring:    var(--blue);
+
+  --success:    var(--green-700);
+  --success-bg: var(--green-100);
+  --error:      #DC2626;
+  --error-bg:   #FEE2E2;
+  --warning:    #B45309;
+  --warning-bg: #FEF3C7;
+
+  /* ─── TYPOGRAPHY ─── */
+  --font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  /* ─── TYPE SCALE ─── */
+  --text-xs:   0.75rem;                              /* 12px */
+  --text-sm:   0.875rem;                             /* 14px */
+  --text-base: 1rem;                                 /* 16px */
+  --text-lg:   1.125rem;                             /* 18px */
+  --text-xl:   1.25rem;                              /* 20px */
+  --text-2xl:  1.5rem;                              /* 24px */
+  --text-3xl:  clamp(1.625rem, 1.3rem + 1.4vw, 2.25rem);
+  --text-4xl:  clamp(2rem, 1.4rem + 2.6vw, 3.25rem);
+  --text-5xl:  clamp(2.5rem, 1.5rem + 4.5vw, 4.5rem);
+  --text-6xl:  clamp(3.5rem, 2rem + 7vw, 6rem);
+
+  /* ─── SPACING (4 px base grid) ─── */
+  --space-1:  0.25rem;   /* 4px  */
+  --space-2:  0.5rem;    /* 8px  */
+  --space-3:  0.75rem;   /* 12px */
+  --space-4:  1rem;      /* 16px */
+  --space-5:  1.25rem;   /* 20px */
+  --space-6:  1.5rem;    /* 24px */
+  --space-8:  2rem;      /* 32px */
+  --space-10: 2.5rem;    /* 40px */
+  --space-12: 3rem;      /* 48px */
+  --space-16: 4rem;      /* 64px */
+  --space-20: 5rem;      /* 80px */
+  --space-24: 6rem;      /* 96px */
+  --space-32: 8rem;      /* 128px */
+
+  /* ─── LAYOUT ─── */
+  --wrap:       1200px;
+  --wrap-narrow: 720px;
+  --gutter:     clamp(1.5rem, 5vw, 4.5rem);
+  --section-y:  clamp(4.5rem, 4vw + 3.5rem, 8rem);
+  --nav-height: 72px;
+
+  /* ─── SHAPE ─── */
+  --radius-sm:   6px;
+  --radius-md:   12px;
+  --radius-lg:   20px;
+  --radius-pill: 999px;
+
+  /* ─── SHADOWS ─── */
+  --shadow-1: 0 1px 2px rgba(7,26,51,.06), 0 1px 3px rgba(7,26,51,.08);
+  --shadow-2: 0 8px 24px rgba(7,26,51,.10);
+  --shadow-3: 0 20px 48px rgba(7,26,51,.18);
+
+  /* ─── MOTION ─── */
+  --ease-glide:  cubic-bezier(.22, .68, .16, 1);
+  --ease-settle: cubic-bezier(.65, 0, .35, 1);
+  --dur-fast:      120ms;
+  --dur-normal:    240ms;
+  --dur-slow:      480ms;
+  --dur-very-slow: 800ms;
+
+  /* ─── WING ACCENT (each wing's styles.css overrides these) ─── */
+  --accent:        var(--blue);
+  --accent-on-dark: var(--blue-400);
+}
+
+/* ─── DARK MODE ─── */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --surface:         var(--navy);
+    --surface-alt:     #0B2347;
+    --surface-raised:  #0F2D57;
+    --on-surface:      var(--mist);
+    --on-surface-muted: var(--slate-400);
+    --border:          rgba(255,255,255,.12);
+    --interactive:     var(--blue-400);
+    --interactive-hover: #93C5FD;
+    --on-interactive:  var(--navy);
+    --focus-ring:      var(--blue-400);
+    color-scheme: dark;
+  }
+}
+[data-theme="dark"] {
+  --surface:         var(--navy);
+  --surface-alt:     #0B2347;
+  --surface-raised:  #0F2D57;
+  --on-surface:      var(--mist);
+  --on-surface-muted: var(--slate-400);
+  --border:          rgba(255,255,255,.12);
+  --interactive:     var(--blue-400);
+  --interactive-hover: #93C5FD;
+  --on-interactive:  var(--navy);
+  --focus-ring:      var(--blue-400);
+  color-scheme: dark;
+}
+
+/* ─── REDUCED MOTION ─── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration:       .01ms !important;
+    animation-iteration-count: 1   !important;
+    transition-duration:      .01ms !important;
+    scroll-behavior:          auto  !important;
+  }
+}
