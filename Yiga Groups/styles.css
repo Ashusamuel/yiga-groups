@@ -49,6 +49,23 @@ button{ font: inherit; color: inherit; background: none; border: none; cursor: p
 img{ max-width: 100%; display:block; }
 ul{ margin:0; padding:0; list-style:none; }
 
+/* Skip-to-content link (accessibility + SEO) */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  z-index: 10000;
+  padding: 10px 18px;
+  background: var(--blue);
+  color: var(--white);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: top 0.2s ease;
+}
+.skip-link:focus { top: 16px; }
+
 ::selection{ background: var(--blue); color: var(--white); }
 
 :focus-visible{
